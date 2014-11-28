@@ -1,0 +1,250 @@
+/* General Styles */
+body {
+	background: #f4f2e9 url(http://subtlepatterns.com/patterns/halftone.png);
+	color: #F5CA84;
+	font-family: 'DSariLight';
+}
+
+html {
+	margin: 0;
+}
+
+.orange,
+.form-error {
+	color: #d14728;
+	font-family: 'DSariBold';
+}
+
+.green {
+	color: #20b080;
+	font-family: 'DSariBold';
+}
+
+/* Custom Styles */
+.mainWrapper {
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 40px 20px;
+	width: 460px;
+}
+
+.header {
+	float: left;
+	margin-bottom: 20px;
+	width: 460px;
+}
+
+.header h1,
+.header h2 {
+	float: left;
+	font-family: 'DSariBook';
+	font-weight: normal;
+	margin: 0;
+	text-align: center;
+	width: 460px;
+}
+
+.header .logo {
+	display: block;
+	margin: 0 auto;
+	width: 250px;
+}
+
+.header .logo img {
+	float: left;
+	width: 100%;
+}
+
+.logo-tienda {
+	display: block;
+	margin: 100px auto 0 auto;
+	width: 420px;
+}
+
+.header h2 {
+	color: #b5aca6;
+	font-size: 18px;
+}
+
+.contactForm {
+	color: #0d2230;
+	background: #FFFFFF;
+	border: 1px solid #eeeeee;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	float: left;
+	padding: 20px;
+	position: relative;
+	width: 420px;
+
+	-webkit-box-shadow: 3px 5px 0 1px rgba(0,0,0,0.1);
+	-moz-box-shadow: 3px 5px 0 1px rgba(0,0,0,0.1);
+	-ms-box-shadow: 3px 5px 0 1px rgba(0,0,0,0.1);
+	-o-box-shadow: 3px 5px 0 1px rgba(0,0,0,0.1);
+	box-shadow: 3px 5px 0 1px rgba(0,0,0,0.1);
+}
+
+.contactForm legend h4 {
+	border-bottom: #c0dfe0 1px solid;
+	float: left;
+	font-family: 'DSariMedium';
+	color: #0d2230;
+	font-size: 18px;
+	margin: 10px 0 30px 0;
+	padding: 0 0 30px 0;
+	text-align: center;
+	width: 420px;
+}
+
+.contactForm legend h4 .orange {
+	color: #d14728;
+	font-family: 'DSariLight';
+}
+
+.contactForm .formRow {
+	float: left;
+	margin: 0 0 20px 0;
+	width: 420px;
+}
+
+.contactForm .formRow label {
+	float: left;
+	font-size: 16px;
+	margin-right: 10px;
+	padding: 10px 0 0 0;
+	width: 130px;
+}
+
+.contactForm .formRow input.formField {
+	background: #f9fcfd;
+	border: #deedf6 1px solid;
+	color: #2e77a8;
+	float: right;
+	font-family: 'DSariLight';
+	height: 38px;
+	padding: 0 5px;
+	margin: 0;
+	width: 260px;
+	
+	/* border radius */
+	-webkit-border-radius: 5px;
+			border-radius: 5px;
+}
+
+.contactForm .formRow select.formField {
+	background: #f9fcfd;
+	border: #deedf6 1px solid;
+	color: #2e77a8;
+	float: right;
+	font-family: 'DSariLight';
+	height: 38px;
+	padding: 0 5px;
+	margin: 0;
+	width: 270px;
+	
+	/* border radius */
+	-webkit-border-radius: 5px;
+			border-radius: 5px;
+}
+
+.contactForm .formRow textarea {
+	border: #d0d4d6 1px solid;
+	color: #017ebd;
+	float: right;
+	font-family: 'DSariLight';
+	height: 90px;
+	padding: 0 5px;
+	margin: 0;
+	width: 260px;
+	
+	/* border radius */
+	-webkit-border-radius: 5px;
+			border-radius: 5px;
+}
+
+.contactForm input[type='submit'],
+.contactForm a.send {
+	background: #d14728;
+	border: none;
+	border-bottom: #a63820 4px solid;
+	color: #FFF;
+	float:  right;
+	font-family: 'DSariLight';
+	font-size: 15px;
+	padding: 10px 20px 5px 20px;
+	text-transform: uppercase;
+	
+	/* border radius */
+	-webkit-border-radius: 5px;
+			border-radius: 5px;
+			
+	/* text shadow */
+	text-shadow: 2px 2px 1px #a63820;
+        filter: dropshadow(color=#a63820, offx=2, offy=2);
+}
+
+.contactForm input[type='submit']:active,
+.contactForm a.send:active {
+	border-bottom: #a63820 1px solid;
+	margin-top: 3px;
+}	
+
+.contactForm a.send {
+	display: block;
+	float: none;
+	margin: 0 auto;
+	text-align: center;
+	text-decoration: none;
+	width: 180px;
+}
+
+/*.contactForm input[type='submit']:hover {	
+	background: #a63820;
+}*/
+
+.contactForm .formRow input.formField:focus,
+.contactForm .formRow textarea:focus {
+	border: #8fcce0 1px solid;
+}
+
+.form-error {
+	float: left;
+	margin: 5px 0 0 150px;
+	width: 100%;
+}
+
+.foldTop {
+	position: absolute;
+	right: -19px;
+	top: -1px;
+}
+
+.foldBottom {
+	position: absolute;
+	right: -19px;
+	bottom: -1px;
+}
+
+footer {
+	font-family: 'DSariLight';
+	color: #0d2230;
+	float: left;
+	font-size: 16px;
+	padding: 20px;
+	text-align: center;
+	width: 420px;
+}
+
+a,
+a:link,
+a:visited {
+	color: #d14728;
+}
+
+a,active,
+a:hover {
+	color: #e67b63;
+}

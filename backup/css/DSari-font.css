@@ -1,0 +1,154 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 2824933, 2014-06-06T16:58:01-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: DSari Thin by Latinotype
+ * URL: http://www.myfonts.com/fonts/latinotype/dsari/thin/
+ * 
+ * Webfont: DSari Ultra Black by Latinotype
+ * URL: http://www.myfonts.com/fonts/latinotype/dsari/ultra-black/
+ * 
+ * Webfont: DSari Thin Italic by Latinotype
+ * URL: http://www.myfonts.com/fonts/latinotype/dsari/thin-italic/
+ * 
+ * Webfont: DSari Medium by Latinotype
+ * URL: http://www.myfonts.com/fonts/latinotype/dsari/medium/
+ * 
+ * Webfont: DSari Ultra Black Italic by Latinotype
+ * URL: http://www.myfonts.com/fonts/latinotype/dsari/ultra-black-italic/
+ * 
+ * Webfont: DSari Medium Italic by Latinotype
+ * URL: http://www.myfonts.com/fonts/latinotype/dsari/medium-italic/
+ * 
+ * Webfont: DSari Black Italic by Latinotype
+ * URL: http://www.myfonts.com/fonts/latinotype/dsari/black-italic/
+ * 
+ * Webfont: DSari Black by Latinotype
+ * URL: http://www.myfonts.com/fonts/latinotype/dsari/black/
+ * 
+ * Webfont: DSari Bold Italic by Latinotype
+ * URL: http://www.myfonts.com/fonts/latinotype/dsari/bold-italic/
+ * 
+ * Webfont: DSari Bold by Latinotype
+ * URL: http://www.myfonts.com/fonts/latinotype/dsari/bold/
+ * 
+ * Webfont: DSari Book Italic by Latinotype
+ * URL: http://www.myfonts.com/fonts/latinotype/dsari/book-italic/
+ * 
+ * Webfont: DSari Book by Latinotype
+ * URL: http://www.myfonts.com/fonts/latinotype/dsari/book/
+ * 
+ * Webfont: DSari Extra Light Italic by Latinotype
+ * URL: http://www.myfonts.com/fonts/latinotype/dsari/extra-light-italic/
+ * 
+ * Webfont: DSari Extra Light by Latinotype
+ * URL: http://www.myfonts.com/fonts/latinotype/dsari/extra-light/
+ * 
+ * Webfont: DSari Heavy Italic by Latinotype
+ * URL: http://www.myfonts.com/fonts/latinotype/dsari/heavy-italic/
+ * 
+ * Webfont: DSari Heavy by Latinotype
+ * URL: http://www.myfonts.com/fonts/latinotype/dsari/heavy/
+ * 
+ * Webfont: DSari Light Italic by Latinotype
+ * URL: http://www.myfonts.com/fonts/latinotype/dsari/light-italic/
+ * 
+ * Webfont: DSari Light by Latinotype
+ * URL: http://www.myfonts.com/fonts/latinotype/dsari/light/
+ * 
+ * Webfont: DSari Italic by Latinotype
+ * URL: http://www.myfonts.com/fonts/latinotype/dsari/italic/
+ * 
+ * Webfont: DSari by Latinotype
+ * URL: http://www.myfonts.com/fonts/latinotype/dsari/regular/
+ * 
+ * Webfont: DSari Semi Bold Italic by Latinotype
+ * URL: http://www.myfonts.com/fonts/latinotype/dsari/semi-bold-italic/
+ * 
+ * Webfont: DSari Semi Bold by Latinotype
+ * URL: http://www.myfonts.com/fonts/latinotype/dsari/semi-bold/
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2824933
+ * Licensed pageviews: 10,000
+ * Webfonts copyright: Copyright (c) 2014 by Diego Aravena. All rights reserved.
+ * 
+ * © 2014 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/2b1ae5");
+
+  
+@font-face {font-family: 'DSariThin';src: url('DSari/2B1AE5_0_0.eot');src: url('DSari/2B1AE5_0_0.eot?#iefix') format('embedded-opentype'),url('DSari/2B1AE5_0_0.woff') format('woff'),url('DSari/2B1AE5_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'DSariUltraBlack';src: url('DSari/2B1AE5_1_0.eot');src: url('DSari/2B1AE5_1_0.eot?#iefix') format('embedded-opentype'),url('DSari/2B1AE5_1_0.woff') format('woff'),url('DSari/2B1AE5_1_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'DSariThin-Italic';src: url('DSari/2B1AE5_2_0.eot');src: url('DSari/2B1AE5_2_0.eot?#iefix') format('embedded-opentype'),url('DSari/2B1AE5_2_0.woff') format('woff'),url('DSari/2B1AE5_2_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'DSariMedium';src: url('DSari/2B1AE5_3_0.eot');src: url('DSari/2B1AE5_3_0.eot?#iefix') format('embedded-opentype'),url('DSari/2B1AE5_3_0.woff') format('woff'),url('DSari/2B1AE5_3_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'DSariUltraBlack-Italic';src: url('DSari/2B1AE5_4_0.eot');src: url('DSari/2B1AE5_4_0.eot?#iefix') format('embedded-opentype'),url('DSari/2B1AE5_4_0.woff') format('woff'),url('DSari/2B1AE5_4_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'DSariMedium-Italic';src: url('DSari/2B1AE5_5_0.eot');src: url('DSari/2B1AE5_5_0.eot?#iefix') format('embedded-opentype'),url('DSari/2B1AE5_5_0.woff') format('woff'),url('DSari/2B1AE5_5_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'DSariBlack-Italic';src: url('DSari/2B1AE5_6_0.eot');src: url('DSari/2B1AE5_6_0.eot?#iefix') format('embedded-opentype'),url('DSari/2B1AE5_6_0.woff') format('woff'),url('DSari/2B1AE5_6_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'DSariBlack';src: url('DSari/2B1AE5_7_0.eot');src: url('DSari/2B1AE5_7_0.eot?#iefix') format('embedded-opentype'),url('DSari/2B1AE5_7_0.woff') format('woff'),url('DSari/2B1AE5_7_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'DSariBold-Italic';src: url('DSari/2B1AE5_8_0.eot');src: url('DSari/2B1AE5_8_0.eot?#iefix') format('embedded-opentype'),url('DSari/2B1AE5_8_0.woff') format('woff'),url('DSari/2B1AE5_8_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'DSariBold';src: url('DSari/2B1AE5_9_0.eot');src: url('DSari/2B1AE5_9_0.eot?#iefix') format('embedded-opentype'),url('DSari/2B1AE5_9_0.woff') format('woff'),url('DSari/2B1AE5_9_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'DSariBook-Italic';src: url('DSari/2B1AE5_A_0.eot');src: url('DSari/2B1AE5_A_0.eot?#iefix') format('embedded-opentype'),url('DSari/2B1AE5_A_0.woff') format('woff'),url('DSari/2B1AE5_A_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'DSariBook';src: url('DSari/2B1AE5_B_0.eot');src: url('DSari/2B1AE5_B_0.eot?#iefix') format('embedded-opentype'),url('DSari/2B1AE5_B_0.woff') format('woff'),url('DSari/2B1AE5_B_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'DSariExtraLight-Italic';src: url('DSari/2B1AE5_C_0.eot');src: url('DSari/2B1AE5_C_0.eot?#iefix') format('embedded-opentype'),url('DSari/2B1AE5_C_0.woff') format('woff'),url('DSari/2B1AE5_C_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'DSariExtraLight';src: url('DSari/2B1AE5_D_0.eot');src: url('DSari/2B1AE5_D_0.eot?#iefix') format('embedded-opentype'),url('DSari/2B1AE5_D_0.woff') format('woff'),url('DSari/2B1AE5_D_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'DSariHeavy-Italic';src: url('DSari/2B1AE5_E_0.eot');src: url('DSari/2B1AE5_E_0.eot?#iefix') format('embedded-opentype'),url('DSari/2B1AE5_E_0.woff') format('woff'),url('DSari/2B1AE5_E_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'DSariHeavy';src: url('DSari/2B1AE5_F_0.eot');src: url('DSari/2B1AE5_F_0.eot?#iefix') format('embedded-opentype'),url('DSari/2B1AE5_F_0.woff') format('woff'),url('DSari/2B1AE5_F_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'DSariLight-Italic';src: url('DSari/2B1AE5_10_0.eot');src: url('DSari/2B1AE5_10_0.eot?#iefix') format('embedded-opentype'),url('DSari/2B1AE5_10_0.woff') format('woff'),url('DSari/2B1AE5_10_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'DSariLight';src: url('DSari/2B1AE5_11_0.eot');src: url('DSari/2B1AE5_11_0.eot?#iefix') format('embedded-opentype'),url('DSari/2B1AE5_11_0.woff') format('woff'),url('DSari/2B1AE5_11_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'DSari-Italic';src: url('DSari/2B1AE5_12_0.eot');src: url('DSari/2B1AE5_12_0.eot?#iefix') format('embedded-opentype'),url('DSari/2B1AE5_12_0.woff') format('woff'),url('DSari/2B1AE5_12_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'DSari';src: url('DSari/2B1AE5_13_0.eot');src: url('DSari/2B1AE5_13_0.eot?#iefix') format('embedded-opentype'),url('DSari/2B1AE5_13_0.woff') format('woff'),url('DSari/2B1AE5_13_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'DSariSemiBold-Italic';src: url('DSari/2B1AE5_14_0.eot');src: url('DSari/2B1AE5_14_0.eot?#iefix') format('embedded-opentype'),url('DSari/2B1AE5_14_0.woff') format('woff'),url('DSari/2B1AE5_14_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'DSariSemiBold';src: url('DSari/2B1AE5_15_0.eot');src: url('DSari/2B1AE5_15_0.eot?#iefix') format('embedded-opentype'),url('DSari/2B1AE5_15_0.woff') format('woff'),url('DSari/2B1AE5_15_0.ttf') format('truetype');}
+ 

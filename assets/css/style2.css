@@ -1,0 +1,198 @@
+@font-face {
+  font-family: 'the cinthia';
+  src: url("../fonts/thecinthiaedito-webfont.eot");
+  src: url("../fonts/thecinthiaedito-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/thecinthiaedito-webfont.woff2") format('woff2'), url("../fonts/thecinthiaedito-webfont.woff") format('woff'), url("../fonts/thecinthiaedito-webfont.ttf") format('truetype'), url("../fonts/thecinthiaedito-webfont.svg#the_cinthia_editoregular") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+header {
+  background: url("../img/beer.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 0.5em 0 6em 0;
+  color: #fff;
+}
+header .logo {
+  max-width: 150px;
+}
+header .logo img {
+  width: 100%;
+}
+header nav {
+  margin-top: 20px;
+  width: 60%;
+  float: right;
+  background: #d14728;
+  border-radius: 5px;
+  padding: 10px;
+  border-bottom: 3px solid #a63820;
+}
+header nav ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+header nav ul li {
+  border-left: 1px solid #a63820;
+  display: inline-block;
+  height: 100%;
+}
+header nav ul li:first-child {
+  border-left: none;
+}
+header nav ul li a {
+  height: 100%;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 0 0.5em;
+  padding: 0 0.2em;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+header nav ul li a:hover {
+  text-decoration: none;
+  color: #0d2230;
+}
+header .mobile-menu {
+  background: #d14728;
+  border-bottom: 3px solid #a63820;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 18px;
+  float: right;
+  margin: 20px 0;
+  padding: 5px 10px;
+}
+header .titular {
+  padding: 2em 0;
+  text-align: center;
+  text-shadow: 0 0 10px #000;
+}
+header .titular h1 {
+  font-family: "the cinthia";
+  font-size: 85px;
+  margin: 0;
+  padding: 0;
+}
+.enganche .titular {
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 2.5em;
+}
+.enganche .titular h2 {
+  color: #0d2230;
+  font-size: 38px;
+  font-weight: 700;
+}
+.enganche .titular h5 {
+  font-size: 18px;
+  line-height: 130%;
+}
+.enganche .posts {
+  text-align: center;
+  padding: 3em;
+  margin-bottom: 3em;
+}
+.enganche .figregistro {
+  margin-top: 2.5em;
+img
+}
+.fondo {
+  background-image: url("../img/fondo-formilario.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0.5em 0 6em 0;
+  color: #fff;
+  text-align: center;
+}
+.fondo .consumidor h2 {
+  font-family: "the cinthia";
+  font-size: 65px;
+}
+.fondo .consumidor h5 {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+  font-size: 18px;
+}
+.fondo .consumidor h5 strong {
+  color: #d14728;
+}
+.fondo .consumidor label {
+  display: block;
+  font-size: 17px;
+  margin: 0;
+  margin-top: 10px;
+}
+.fondo .consumidor .formField {
+  color: #000;
+  width: 220px;
+}
+.fondo .consumidor .submit {
+  display: block;
+  margin: 20px auto;
+  background: #d14728;
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  border-bottom: 3px solid #a63820;
+  outline: none;
+}
+.registro {
+  text-align: center;
+}
+.registro h2 {
+  font-family: "the cinthia";
+  font-size: 70px;
+  margin-top: 1.2em;
+  padding: 0;
+}
+.registro h3 {
+  padding: 0;
+  margin-top: -0.5em;
+}
+.registro h3 span {
+  font-family: "the cinthia";
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+footer {
+  background: #0d2230;
+  color: #fff;
+  text-align: center;
+  padding: 2em 0;
+}
+#fb {
+  margin-bottom: 2em;
+}
+@media (max-width: 1199px) {
+  header nav {
+    width: 90%;
+  }
+}
+@media (max-width: 767px) {
+  header nav {
+    margin-top: 0;
+    position: absolute;
+    top: 60px;
+    right: 60px;
+    width: 100%;
+    z-index: 100;
+  }
+  header nav ul li {
+    border-left: none;
+    border-bottom: 1px solid #a63820;
+    width: 100%;
+  }
+  header nav ul li:last-child {
+    border-bottom: none;
+  }
+}

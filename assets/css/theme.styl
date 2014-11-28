@@ -1,0 +1,320 @@
+@import '../fonts/nexa-rust/nexa-font.css'
+
+azul = #183e58
+azulObscuro = #0d2230
+azulClaro = #c0dfe0
+naranja = #d14728
+naranjaObscuro = #a63820
+gris_texto = #7A7A7A
+gris_oscuro = #444
+
+body 
+	font-family 'Open Sans', sans-serif
+	font-weight 400 
+	
+.cta 
+	background naranja
+	border-radius 5px
+	box-shadow 0 0 20px 5px rgba(0,0,0,0.5)
+	display block
+	color white
+	font-size 20px
+	font-weight 700
+	margin 20px auto
+	padding 10px
+	border-bottom 3px solid naranjaObscuro
+	text-align center
+	text-shadow none
+	width 380px
+	max-width 90%
+	
+	&:hover
+		background #c0dfe0
+		border-bottom 3px solid #51a2a5
+		color azulObscuro
+		text-decoration none
+
+.dotted-grid
+	background url("../img/gridtile_3x3.png") 0 0 repeat
+	display block
+	left 0
+	height 100%
+	position absolute
+	top 0
+	width 100%
+	z-index 10
+
+.TRight
+	text-align right
+
+header
+	background fixed url("../img/beer.jpg") center top no-repeat
+	background-size cover
+	padding 0 0 280px 0
+	position relative
+	color white
+	z-index 0
+	
+	.logo
+		position relative
+		max-width 150px
+		z-index 20
+		
+		img
+			width 100%
+				
+	nav
+		position relative
+		margin-top 20px
+		width 60%
+		float right
+		background naranja
+		border-radius 5px
+		padding 10px
+		border-bottom 3px solid naranjaObscuro
+		z-index 20
+		ul
+			margin 0
+			padding 0
+			text-align center
+			li
+				border-left 1px solid naranjaObscuro
+				display inline-block
+				height 100%
+				
+				&:first-child
+					border-left none
+
+				a
+					height 100%
+					color white
+					font-size 18px
+					font-weight 300
+					margin 0 0.5em
+					padding 0 0.2em
+					text-decoration none
+					transition all .5s
+					&:hover
+						text-decoration none
+						color azulObscuro
+	
+	.mobile-menu
+		position relative
+		background azul
+		border-bottom 3px solid azulObscuro
+		border-radius 5px
+		color white
+		font-size 18px
+		float right
+		margin 20px 0
+		padding 5px 10px
+		
+		z-index 20
+												
+	.titular
+		position relative
+		padding 2em 0
+		text-align center
+		text-shadow 0 0 10px rgba(0,0,0,1)
+		z-index 20
+		h1
+			font-family 'nexa_rust_sansblack'
+			font-size 65px
+			margin 0
+			padding 0
+		
+		h4
+			font-size 20px
+			margin-bottom 40px
+		
+.enganche
+	display block
+	margin-bottom 60px
+	width 100%
+	.titular
+		margin-top 50px
+		text-align center
+		
+		h2 
+			color azulObscuro
+			font-family 'nexa_rust_sansblack'
+			font-size 32px
+			font-weight 700
+			
+		h5 
+			font-size 18px
+			line-height 130%
+	.posts
+		text-align center
+		padding 0.2em 0.2em 0 0.2em
+		margin-bottom 20px
+	.figregistro
+		margin-top 2.5em
+		img
+			border-radius 50%
+	
+	.cta
+		box-shadow none
+		
+		&:hover
+			background azul
+			border-bottom 3px solid azulObscuro
+			color white
+		
+.fondo
+	background-image url("../img/fondo-formilario.jpg")
+	background-position center center
+	background-repeat no-repeat
+	background-size cover
+	padding .5em 0 6em 0
+	position relative
+	color white
+	text-align center
+	z-index 0
+	
+	.consumidor
+		position relative
+		z-index 20
+		h2
+			font-family 'nexa_rust_sansblack'
+			font-size 48px
+		h3
+			margin 0
+			margin-bottom 15px
+			padding 0
+			strong
+				color #c0dfe0
+		p 
+			font-size 18px
+		
+		hr 
+			margin 10px auto
+			opacity 0.4
+			width 80%
+			
+		.mc-field-group
+			overflow hidden
+
+			label
+				display block
+				font-family 'nexa_rust_sansblack'
+				font-size 17px
+				margin 0
+				margin-top 10px
+				text-align left
+				
+				.asterisk
+					color naranja
+					font-family 'Open Sans', sans-serif
+					font-weight 700 
+			input
+				background rgba(255,255,255,0.8)
+				border none
+				border-radius 3px
+				color azul
+				float left
+				font-weight 700
+				padding 10px 5px
+				width 100%
+				&:focus
+					background white
+					outline none
+		.submit
+			color white
+			display block
+			margin 20px auto
+			background naranja
+			border-radius 5px
+			font-family 'nexa_rust_sansblack'
+			margin-top 32px
+			max-width 320px
+			padding 10px
+			border none
+			border-bottom 3px solid naranjaObscuro
+			outline none
+			
+			&:hover, &:active
+				background #c0dfe0
+				border-bottom 3px solid #51a2a5
+				color azulObscuro
+				text-decoration none
+			
+.registro
+	margin 40px 0
+	text-align center
+	h2
+		color azul
+		font-family 'nexa_rust_sansblack'
+		font-size 43px
+		margin 0 0 10px 0
+		padding 0
+
+	h3
+		padding 0 
+		margin-top -.5em
+		
+		span
+			color azul
+			font-family 'nexa_rust_sansblack'
+			font-size 40px
+			letter-spacing 2px
+	
+		
+footer
+	background azulObscuro
+	color white
+	text-align center
+	padding 2em 0
+#fb
+	margin-bottom 2em
+	
+@media (min-width:1200px)
+	.enganche
+		padding 0 300px
+
+@media (min-width:1200px)
+	header 
+		background-position center bottom
+
+@media (max-width:1199px)
+	header
+		padding-bottom 100px
+		nav
+			width 90%
+
+// @media (min-width:960px)
+// 	.enganche
+// 		padding 0 160px
+
+@media (max-width:767px)
+	header
+		background-size auto 500px
+		padding-bottom 0px
+		
+		.titular 
+			h1 
+				font-size 42px
+		nav
+			margin-top 0
+			position absolute
+			top 60px
+			right 60px
+			width 100%
+			z-index 100
+			
+			ul 
+				li 
+					border-left none 
+					border-bottom 1px solid azulObscuro
+					width 100%
+					
+					&:last-child 
+						border-bottom none
+						
+@media (max-width:560px)
+	header
+		
+		.titular 
+			h1 
+				font-size 32px	
+				padding 0 10px

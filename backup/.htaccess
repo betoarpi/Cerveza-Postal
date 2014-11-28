@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^cervezapostal\.com\.mx$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.cervezapostal\.com\.mx$
+RewriteRule ^/?$ "http\:\/\/cervezapostal\.mx\/" [R=301,L]
+
