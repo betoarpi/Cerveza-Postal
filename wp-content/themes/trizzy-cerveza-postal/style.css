@@ -1,0 +1,15 @@
+/*
+ Theme Name:     Cerveza Postal
+ Description:    Tema para Cerveza postal a partir de Trizzy Child Theme
+ Author:         Rob Arroyo
+ Template:       trizzy
+ Version:        1.0
+*/
+
+/* =Imports styles from the parent theme
+-------------------------------------------------------------- */
+@import url('../trizzy/style.css');
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+@import url('theme.css');
