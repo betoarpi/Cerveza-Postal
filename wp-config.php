@@ -16,16 +16,16 @@
 
 // ** Ajustes de MySQL. Solicita estos datos a tu proveedor de alojamiento web. ** //
 /** El nombre de tu base de datos de WordPress */
-define('DB_NAME', 'cp_commerce');
+define('DB_NAME', 'betoarpi_wp-whoocommerce');
 
 /** Tu nombre de usuario de MySQL */
-define('DB_USER', 'root');
+define('DB_USER', 'betoarpi_startup');
 
 /** Tu contraseña de MySQL */
-define('DB_PASSWORD', 'root');
+define('DB_PASSWORD', 'i2i$={B)Mok@');
 
 /** Host de MySQL (es muy probable que no necesites cambiarlo) */
-define('DB_HOST', 'localhost:8888');
+define('DB_HOST', '192.185.21.169');
 
 /** Codificación de caracteres para la base de datos. */
 define('DB_CHARSET', 'utf8');
