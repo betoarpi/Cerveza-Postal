@@ -3,8 +3,8 @@
 Contributors: yithemes
 Tags: wishlist, woocommerce, products, themes, yit, e-commerce, shop
 Requires at least: 3.5.1
-Tested up to: 4.0
-Stable tag: 1.1.6
+Tested up to: 4.1
+Stable tag: 1.1.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -20,9 +20,9 @@ afterwards add them to the cart or remove them.
 
 Working demo are available:
 
-**[LIVE DEMO 1](http://demo.yithemes.com/room09/product/africa-style/)** - **[LIVE DEMO 2](http://demo.yithemes.com/bazar/shop/ankle-shoes/)**
+**[LIVE DEMO 1](http://preview.yithemes.com/room09/product/africa-style/)** - **[LIVE DEMO 2](http://preview.yithemes.com/bazar/shop/ankle-shoes/)**
 
-Full documentation is available [here](http://yithemes.com/docs-plugins/yith_wishlist/).
+Full documentation is available [here](http://yithemes.com/docs-plugins/yith_woocommerce_wishlist).
 
 This plugin is 100% compatible with [WPML](http://wpml.org/?aid=24889&affiliate_key=Qn1wDeBNTcZV)
 
@@ -36,7 +36,7 @@ YITH WooCommerce Wishlist will add a new tab called "Wishlist" below the Woocomm
 
 = Developer =
 
-Are you a developer? Want to customize the templates or the style of the plugin? Read on the [documentation](http://yithemes.com/docs-plugins/yith_wishlist/) and discover how to do that.
+Are you a developer? Want to customize the templates or the style of the plugin? Read on the [documentation](http://yithemes.com/docs-plugins/yith_woocommerce_wishlist/) and discover how to do that. 
 
 = Support =
 
@@ -74,6 +74,11 @@ Yes, you can change the colors of background, text and border or apply a custom 
 4. The Wishlist settings page
 
 == Changelog ==
+
+= 1.1.7 =
+* Added: Support to WooCommerce Endpoints (@use yit_wcwl_add_to_cart_redirect_url filter)
+* Add filter to shortcode html
+* Add title to share
 
 = 1.1.6 =
 
@@ -168,7 +173,7 @@ If you have created your own language pack, or have an update for an existing on
 
 == Documentation ==
 
-Full documentation is available [here](http://yithemes.com/docs-plugins/yith_wishlist/).
+Full documentation is available [here](http://yithemes.com/docs-plugins/yith_woocommerce_wishlist).
 
 == Upgrade notice ==
 
