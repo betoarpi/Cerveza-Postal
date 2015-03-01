@@ -1,18 +1,20 @@
-=== YITH WooCommerce Wishlist ===
+=== YITH WooCommerce Wishlist === 
 
 Contributors: yithemes
-Tags: wishlist, woocommerce, products, themes, yit, e-commerce, shop
+Tags: wishlist, woocommerce, products, themes, yit, e-commerce, shop, ecommerce wishlist, yith, woocommerce wishlist, woocommerce 2.3 ready, shop wishlist
 Requires at least: 3.5.1
-Tested up to: 4.1
-Stable tag: 1.1.7
+Tested up to: 4.1.1
+Stable tag: 2.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 YITH WooCommerce Wishlist add all Wishlist features to your website. Needs WooCommerce to work.
-WooCommerce 2.2.x compatible.
+WooCommerce 2.3.x compatible.
 
 
 == Description ==
+
+What can really make the difference in conversions and amount of sales is without a doubt the freedom to share your own wishlist, even on social networks, increasing indirect sales: can you imagine the sales volume you can generate during holidays or birthdays, when relatives and friends will be looking for the wishlist of your clients to buy a gift?
 
 Offer to your visitors a chance to add the products of your woocommerce store to a wishlist page. With YITH WooCommerce Wishlist you can add a link in each product detail page,
 in order to add the products to the wishlist page. The plugin will create you the specific page and the products will be added in this page and
@@ -22,7 +24,7 @@ Working demo are available:
 
 **[LIVE DEMO 1](http://preview.yithemes.com/room09/product/africa-style/)** - **[LIVE DEMO 2](http://preview.yithemes.com/bazar/shop/ankle-shoes/)**
 
-Full documentation is available [here](http://yithemes.com/docs-plugins/yith_woocommerce_wishlist).
+Full documentation is available [here](http://yithemes.com/docs-plugins/yith-woocommerce-wishlist).
 
 This plugin is 100% compatible with [WPML](http://wpml.org/?aid=24889&affiliate_key=Qn1wDeBNTcZV)
 
@@ -36,7 +38,7 @@ YITH WooCommerce Wishlist will add a new tab called "Wishlist" below the Woocomm
 
 = Developer =
 
-Are you a developer? Want to customize the templates or the style of the plugin? Read on the [documentation](http://yithemes.com/docs-plugins/yith_woocommerce_wishlist/) and discover how to do that. 
+Are you a developer? Want to customize the templates or the style of the plugin? Read on the [documentation](http://yithemes.com/docs-plugins/yith-woocommerce-wishlist/) and discover how to do that. 
 
 = Support =
 
@@ -66,6 +68,15 @@ Yes, you can move the button to another default position or you can also use the
 = Can I change the style of "Add to wishlist" button? =
 Yes, you can change the colors of background, text and border or apply a custom css. You can also use a link or a button for the "Add to wishlist" feature.
 
+= Wishlist page returns a 404 error? =
+Try to regenerate permalinks from Settings -> Permalinks by simply saving them again.
+
+= Did icons of your theme disappear after update to Wishlist 2.0.x? =
+It might be a compatibility problem with the old version of font-awesome, which has been solved with version 2.0.2 of the plugin. Be sure that you are using a plugin version that is greater or equal to 2.0.2. If, after update, you cannot see icons in your theme yet, save again options of YITH WooCommerce Wishlist plugin (that you can find in YIT Plugin -> Wishlist).
+
+= Have you encountered anomalies after plugin update, that did not exist in the previous version? =
+This might depend on the fact that your theme overrides plugin templates. Check if the developer of your theme has released a compatibility update with version 2.0 or later of YITH WooCommerce Wishlist. As an alternative you can try the plugin in WordPress default theme to leave out any possible influences by the theme.
+
 == Screenshots ==
 
 1. The page with "Add to wishlist" button
@@ -75,16 +86,47 @@ Yes, you can change the colors of background, text and border or apply a custom 
 
 == Changelog ==
 
+= 2.0.3 =
+
+* Tweak: set correct protocol for admin-ajax requests
+* Tweak: used wc core function to set cookie
+* Tweak: let customization of add_to_wishlist shortcodes
+* Fixed: show add to cart column when stock status disabled
+* Fixed: product existing in wishlist
+
+= 2.0.2 =
+
+* Updated: font-awesome library
+* Fixed: option with old font-awesome classes
+
+= 2.0.1 =
+
+* Added: spinner image on loading
+* Added: flush rewrite rules on database upgrade
+* Fixed: wc_add_to_cart_params not defined issue
+
+= 2.0.0 =
+
+* Added: Support to woocommerce 2.3
+* Added: New color options
+* Tweak: Add to cart button from woocommerce template
+* Tweak: Share links on template
+* Tweak: Code revision
+* Tweak: Use wordpress API in ajax call instead of custom script
+* Updated: Plugin core framework
+
+
 = 1.1.7 =
+
 * Added: Support to WooCommerce Endpoints (@use yit_wcwl_add_to_cart_redirect_url filter)
-* Add filter to shortcode html
-* Add title to share
+* Added: Filter to shortcode html
+* Added: Title to share
 
 = 1.1.6 =
 
 * Updated: Plugin Core Framework
-* Update: Languages file
-* Tweek: WPML Support Improved
+* Updated: Languages file
+* Tweek:   WPML Support Improved
 
 = 1.1.5 =
 
@@ -143,16 +185,16 @@ Yes, you can change the colors of background, text and border or apply a custom 
 
 = 1.0.3 =
 
-* Minor bugs fixes
+* Fixed: Minor bugs fixes
 
 = 1.0.2 =
 
-* Fixed fatal error to yit_debug with yit themes
+* Fixed: Fatal error to yit_debug with yit themes
 
 = 1.0.1 =
 
-* Optimized images
-* Updated internal framework
+* Tweak: Optimized images
+* Updated: internal framework
 
 = 1.0.0 =
 
@@ -173,10 +215,14 @@ If you have created your own language pack, or have an update for an existing on
 
 == Documentation ==
 
-Full documentation is available [here](http://yithemes.com/docs-plugins/yith_woocommerce_wishlist).
+Full documentation is available [here](http://yithemes.com/docs-plugins/yith-woocommerce-wishlist).
 
 == Upgrade notice ==
 
-= 1.0.0 =
+= 2.0.3 =
 
-Initial release
+* Tweak: set correct protocol for admin-ajax requests
+* Tweak: used wc core function to set cookie
+* Tweak: let customization of add_to_wishlist shortcodes
+* Fixed: show add to cart column when stock status disabled
+* Fixed: product existing in wishlist

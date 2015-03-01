@@ -4,12 +4,14 @@
  *
  * @author 		WooThemes
  * @package 	WooCommerce/Templates
- * @version     2.1.0
+ * @version     2.3.0
  */
 
-if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
-global $woocommerce, $product, $post;
+global $product, $post;
 ?>
 
 <?php do_action( 'woocommerce_before_add_to_cart_form' ); ?>
@@ -21,7 +23,7 @@ global $woocommerce, $product, $post;
 				<?php $loop = 0; foreach ( $attributes as $name => $options ) : $loop++; ?>
 					<div class="four columns <?php echo ($loop%2 ? "alpha" : "omega"); ?>">
 						<label for="<?php echo sanitize_title($name); ?>"><?php echo wc_attribute_label( $name ); ?></label>
-						<select id="<?php echo esc_attr( sanitize_title( $name ) ); ?>" name="attribute_<?php echo sanitize_title( $name ); ?>">
+						<select id="<?php echo esc_attr( sanitize_title( $name ) ); ?>" name="attribute_<?php echo sanitize_title( $name ); ?>" data-attribute_name="attribute_<?php echo sanitize_title( $name ); ?>">
 							<option value=""><?php echo __( 'Choose an option', 'woocommerce' ) ?>&hellip;</option>
 							<?php
 								if ( is_array( $options ) ) {
@@ -37,28 +39,15 @@ global $woocommerce, $product, $post;
 									// Get terms if this is a taxonomy - ordered
 									if ( taxonomy_exists( $name ) ) {
 
-										$orderby = wc_attribute_orderby( $name );
-
-										switch ( $orderby ) {
-											case 'name' :
-												$args = array( 'orderby' => 'name', 'hide_empty' => false, 'menu_order' => false );
-											break;
-											case 'id' :
-												$args = array( 'orderby' => 'id', 'order' => 'ASC', 'menu_order' => false, 'hide_empty' => false );
-											break;
-											case 'menu_order' :
-												$args = array( 'menu_order' => 'ASC', 'hide_empty' => false );
-											break;
-										}
-
-										$terms = get_terms( $name, $args );
+										$terms = wc_get_product_terms( $post->ID, $name, array( 'fields' => 'all' ) );
 
 										foreach ( $terms as $term ) {
-											if ( ! in_array( $term->slug, $options ) )
+											if ( ! in_array( $term->slug, $options ) ) {
 												continue;
-
+											}
 											echo '<option value="' . esc_attr( $term->slug ) . '" ' . selected( sanitize_title( $selected_value ), sanitize_title( $term->slug ), false ) . '>' . apply_filters( 'woocommerce_variation_option_name', $term->name ) . '</option>';
 										}
+
 									} else {
 
 										foreach ( $options as $option ) {

@@ -7,7 +7,7 @@ $format = get_post_format();
 if( false === $format )  $format = 'standard'; ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('single'); ?>>
-
+<?php if ( ! post_password_required() ) { ?>
 <?php
 	if($format == 'standard') {
 	 	if(has_post_thumbnail()) {
@@ -86,7 +86,7 @@ if(!empty($quote_content)) {?>
 		}
 	} // eof gallery
 ?>
-
+<?php } // eof password protection  ?>
 
 	<section class="date">
 		<span class="day"><?php echo get_the_date( 'j' ); ?></span>

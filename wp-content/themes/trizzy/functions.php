@@ -225,10 +225,14 @@ endif;
 add_action( 'wp_enqueue_scripts', 'load_trizzy_wc_scripts' );
 
 function load_trizzy_wc_scripts() {
-    global $wp_scripts;
-    $wp_scripts->registered[ 'wc-add-to-cart-variation' ]->src = get_template_directory_uri() . '/woocommerce/js/add-to-cart-variation.js';
+        if ( class_exists( 'WooCommerce' ) ) {
+            global $wp_scripts;
+            $gallerytype = ot_get_option('pp_product_default_gallery','off');
+            if($gallerytype == 'off') {
+                $wp_scripts->registered[ 'wc-add-to-cart-variation' ]->src = get_template_directory_uri() . '/woocommerce/js/add-to-cart-variation.js';
+            }
+        }
     }
-
 
 if ( ! function_exists( 'build_webfonts_links' ) ) :
 function build_webfonts_links() {
@@ -300,6 +304,10 @@ require_once get_template_directory() . '/inc/extras.php';
  */
 require_once get_template_directory() . '/inc/customizer.php';
 
+/**
+ * Load demo installer.
+ */
+require get_template_directory() .'/inc/init.php';
 
 /**
  * Load Visual Composer compatibility file.

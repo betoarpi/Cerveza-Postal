@@ -1,11 +1,14 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-<?php if(has_post_thumbnail()) { ?>
-  <figure class="post-img">
+<?php 
+if ( ! post_password_required() ) { 
+    if(has_post_thumbnail()) { ?>
+    <figure class="post-img">
     <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail();  ?>
-      <div class="hover-icon"></div>
+    <div class="hover-icon"></div>
     </a>
-  </figure>
-<?php } ?>
+    </figure>
+<?php } 
+}?>
   <section class="date">
     <span class="day"><?php echo get_the_date( 'j' ); ?></span>
     <span class="month"><?php echo get_the_date( 'M' ); ?></span>

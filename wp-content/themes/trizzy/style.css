@@ -4,7 +4,7 @@ Theme URI: trizzy.purethemes.wpengine.com
 Author: Purethemes
 Author URI: http://themeforest.net/user/purethemes
 Description: Multi-purpose WooCommerce Theme
-Version: 1.3.1
+Version: 1.5.1
 License: ThemeForest
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: trizzy
@@ -158,6 +158,7 @@ ul.top-bar-menu li i {
 	z-index: 1;
 	position: relative;
 }
+
 
 
 /* Social Icons
@@ -935,6 +936,7 @@ div.wpcf7-response-output.wpcf7-validation-errors strong,
 	margin: 0;
 }
 
+input.search-field,
 .top-search input,
 .apply-coupon input {
 	font-size: 13px;
@@ -948,6 +950,10 @@ div.wpcf7-response-output.wpcf7-validation-errors strong,
 	float: left;
 	margin: 0;
 	border: 0;
+}
+
+.wc-proceed-to-checkout {
+	margin-top: 20px;
 }
 
 .woocommerce-checkout .woocommerce-info span {
@@ -5682,6 +5688,15 @@ margin: 0 15px 0 0;
 	-moz-user-select: none;
 	user-select: none;
 }
+.slide-caption {
+	position: absolute;
+	bottom: 0px;
+	background: #c0c0c0;
+	padding: 20px;
+}
+.slide-caption h3 {
+	color: #fff
+}
 .trizzy-variation-holder img {
 	margin-bottom: 20px;
 }
@@ -6202,6 +6217,42 @@ img.rsImg {
 }
 
 
+ div.product div.thumbnails {
+    overflow: hidden;
+    margin-top:15px;
+ }
+ div.product div.thumbnails:before {
+content: " ";
+display: table;
+}
+
+.woocommerce #content div.product div.thumbnails a.last, .woocommerce div.product div.thumbnails a.last, .woocommerce-page #content div.product div.thumbnails a.last, .woocommerce-page div.product div.thumbnails a.last {
+	margin-right: 0px
+}
+.woocommerce #content div.product div.thumbnails a.first, .woocommerce div.product div.thumbnails a.first, .woocommerce-page #content div.product div.thumbnails a.first, .woocommerce-page div.product div.thumbnails a.first {
+clear: both;
+}
+
+.woocommerce #content div.product div.images img, .woocommerce div.product div.images img, .woocommerce-page #content div.product div.images img, .woocommerce-page div.product div.images img {
+display: block;
+width: 100%;
+height: auto;
+
+-webkit-transition: all ease-in-out .2s;
+-moz-transition: all ease-in-out .2s;
+-o-transition: all ease-in-out .2s;
+transition: all ease-in-out .2s;
+}
+
+.woocommerce #content div.product div.thumbnails:after, .woocommerce div.product div.thumbnails:after, .woocommerce-page #content div.product div.thumbnails:after, .woocommerce-page div.product div.thumbnails:after {
+clear: both;
+}
+
+.woocommerce #content div.product div.thumbnails a, .woocommerce div.product div.thumbnails a, .woocommerce-page #content div.product div.thumbnails a, .woocommerce-page div.product div.thumbnails a {
+float: left;
+width: 30.75%;
+margin-right: 3.8%;
+}
 
 .product-page .title {
 	padding: 0 0 20px 0;
@@ -6505,6 +6556,10 @@ a.cart-remove:hover {
 body .wishlist_table tr td {
 	text-align: left;
 }
+
+#payment_method_paypal label {
+	vertical-align: top;
+}
 /* Add to Cart Button */
 .linking button.button {
 	margin: 0 0 0 25px;
@@ -6556,7 +6611,8 @@ table.cart-table {
 	border:none;
 }
 
-table.cart-table th {
+table.cart-table th,
+table.cart-table td.actions {
 	border: none;
 	background-color: #f6f6f6;
 	text-align: left;
@@ -6594,9 +6650,9 @@ table.cart-table.bottom {
 	margin-top: -1px;
 }
 
-table.cart-table.bottom .cart-btns { float: right; }
-table.cart-table.bottom .cart-btns  a { margin-left: 10px; }
-table.cart-table.bottom th { padding: 15px; }
+table.cart-table .cart-btns { float: right; }
+table.cart-table .cart-btns  a { margin-left: 10px; display: inline-table }
+table.cart-table td.actions { padding: 15px; }
 
 .product-subtotal .amount {
 	font-weight: 600
@@ -6609,7 +6665,7 @@ table.cart-table.bottom th { padding: 15px; }
 }
 
 .cart_totals .cart-table th {
-	vertical-align: middle;
+	vertical-align: top;
 	border-bottom: 1px solid #fff;
 	width: 40%;
 	padding: 10px 15px;
@@ -6622,6 +6678,7 @@ table.cart-table.bottom th { padding: 15px; }
 .cart_totals .cart-table tr:last-child th,
 .cart_totals .cart-table tr:last-child td {border:0;}
 
+.container .page ul#shipping_method label { display: inline; }
 
 table.cart-table.subtotals td {
 	padding: 15px;
@@ -7404,7 +7461,7 @@ html[xmlns] .slides {display: block;}
 }
 
 .post .basic-slider { margin-bottom: 25px; }
-
+.masonry-item .post .basic-slider { margin-bottom: 0px; }
 .extra-padding {
 	padding-right: 20px;
 }
@@ -7441,7 +7498,9 @@ html[xmlns] .slides {display: block;}
 .container .page .showbiz .overflowholder ul,
 .container .page .share-buttons ul,
 .container .page .rev_slider ul,
+.container .page ul#shipping_method,
 .container .page ul.product-list,
+.container .page ul.woocommerce-error,
 .container .page ul.ptwsi_social-icons,
 .container .page ul.widget-tabs,
 .container .page ul.wpb_tabs_nav,

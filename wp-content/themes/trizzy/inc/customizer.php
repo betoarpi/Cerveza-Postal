@@ -310,7 +310,7 @@ if($custom_rgb) {
 .qtyminus:hover, a.calculate-shipping:hover, .og-close:hover, .tags a:hover { background: <?php echo $custom_main_color; ?>; }
 
 
-.widget_layered_nav ul li:hover,.woo-search-main button:hover, .top-search button:hover, .cart-buttons a, .cart-buttons a.checkout, .menu > li:hover .current, .menu > li.sfHover .current, .menu > li:hover,
+a.button.wc-forward,.widget_layered_nav ul li:hover,.woo-search-main button:hover, .top-search button:hover, .cart-buttons a, .cart-buttons a.checkout, .menu > li:hover .current, .menu > li.sfHover .current, .menu > li:hover,
 .menu > li.sfHover, #navigation.alt .menu > li:hover, #navigation.alt .menu > li.sfHover, #navigation .menu > li:hover, #navigation .menu > li.sfHover,
 li.dropdown ul li a:hover, #jPanelMenu-menu li a:hover, li.menu-item-has-children:not(.has-megamenu) ul li a:hover, input[type="button"],
 input[type="submit"], a.button, .shipping-calculator-form .button, a.button.color, a.button.checkout.wc-forward, /* .apply-coupon input.button:hover, */

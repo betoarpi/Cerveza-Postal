@@ -243,17 +243,16 @@ msgstr "%1$s en %2$s"
 msgid "<span class=\"attachment-meta\">Published on <time class=\"entry-date\" datetime=\"%1$s\">%2$s</time> in <a href=\"%3$s\" title=\"Return to %4$s\" rel=\"gallery\">%5$s</a></span>"
 msgstr "<span class=\"attachment-meta\">Publicado el <time class=\"entry-date\" datetime=\"%1$s\">%2$s</time> en <a href=\"%3$s\" title=\"Volver a %4$s\" rel=\"gallery\">%5$s</a></span>"
 
-#. Translators: If there are characters in your language that are not
-#. * supported by Source Sans Pro, translate this to 'off'. Do not translate
-#. * into your own language.
+#. Translators: If there are characters in your language that are not supported
+#. by Source Sans Pro, translate this to 'off'. Do not translate into your own
+#. language.
 #: functions.php:128
 msgctxt "Source Sans Pro font: on or off"
 msgid "on"
 msgstr "activa"
 
-#. Translators: If there are characters in your language that are not
-#. * supported by Bitter, translate this to 'off'. Do not translate into your
-#. * own language.
+#. Translators: If there are characters in your language that are not supported
+#. by Bitter, translate this to 'off'. Do not translate into your own language.
 #: functions.php:134
 msgctxt "Bitter font: on or off"
 msgid "on"

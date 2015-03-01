@@ -21,6 +21,8 @@ function trizzy_output_content_wrapper_end(){
 remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20 );
 add_action( 'trizzy_woocommerce_breadcrumb', 'woocommerce_breadcrumb', 10 );
 
+
+
 // remove products counter
 remove_action( 'woocommerce_before_shop_loop','woocommerce_result_count', 20 );
 
@@ -134,6 +136,7 @@ class TrizzyWC_Product_Cat_List_Walker extends Walker {
 // Fixing breadcrumbs
 add_filter( 'woocommerce_breadcrumb_defaults', 'trizzy_woocommerce_breadcrumbs' );
 function trizzy_woocommerce_breadcrumbs() {
+
     return array(
             'delimiter'   => ' ',
             'wrap_before' => '<nav id="breadcrumbs" itemprop="breadcrumb"><ul>',

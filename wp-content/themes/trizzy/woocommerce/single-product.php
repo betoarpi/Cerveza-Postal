@@ -31,7 +31,7 @@ if($parallaxtype == 'products') {
 				<?php } ?>
 			</h2>
 
-				<?php if(ot_get_option('pp_breadcrumbs','on') == 'on') echo dimox_breadcrumbs(); ?>
+				<?php if(ot_get_option('pp_breadcrumbs','on') == 'on')  { do_action( 'trizzy_woocommerce_breadcrumb' ); } ?>
 
 		</div>
 	</section>
@@ -49,7 +49,7 @@ if($parallaxtype == 'products') {
 				echo "<span>".$subtitle."</span>";
 			} ?>
 			</h2>
-			<?php do_action( 'trizzy_woocommerce_breadcrumb' ); ?>
+			<?php if(ot_get_option('pp_breadcrumbs','on') == 'on')  { do_action( 'trizzy_woocommerce_breadcrumb' ); } ?>
 		</div>
 	</section>
 	<?php }
@@ -58,7 +58,7 @@ if($parallaxtype == 'products') {
 	<div class="container">
 	    <div class="sixteen columns">
 	        <h2><?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?><?php woocommerce_page_title(); ?><?php endif; ?></h2>
-	        <?php do_action( 'trizzy_woocommerce_breadcrumb' ); ?>
+	        <?php if(ot_get_option('pp_breadcrumbs','on') == 'on')  { do_action( 'trizzy_woocommerce_breadcrumb' ); } ?>
 	    </div>
 	</div>
 	</section>

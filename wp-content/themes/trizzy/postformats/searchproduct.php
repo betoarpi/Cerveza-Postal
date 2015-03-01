@@ -19,10 +19,14 @@
     $short_excerpt = strip_shortcodes( $excerpt ); echo $short_excerpt.'..'; ?>
     </p>
     <span class="price"><?php echo $product->get_price_html(); ?></span>
-    <?php if($product->product_type == 'simple') { ?>
-      <a href="<?php echo esc_url( home_url( '/' ) ).'cart/?add-to-cart='.$product->id ?>" class="button"><i class="fa fa-shopping-cart"></i><?php echo $product->single_add_to_cart_text(); ?></a>
-    <?php } else {  ?>
-      <a href="<?php the_permalink(); ?>" class="button"><i class="fa fa-shopping-cart"></i><?php echo $product->add_to_cart_text(); ?></a>
+    <?php 
+    $catalogmode = ot_get_option('pp_woo_catalog','off');
+    if ($catalogmode == "off") { ?>
+      <?php if($product->product_type == 'simple') { ?>
+        <a href="<?php echo esc_url( home_url( '/' ) ).'cart/?add-to-cart='.$product->id ?>" class="button"><i class="fa fa-shopping-cart"></i><?php echo $product->single_add_to_cart_text(); ?></a>
+      <?php } else {  ?>
+        <a href="<?php the_permalink(); ?>" class="button"><i class="fa fa-shopping-cart"></i><?php echo $product->add_to_cart_text(); ?></a>
+      <?php } ?>
     <?php } ?>
     <a href="<?php the_permalink(); ?>" class="button color"><?php _e('Read More','trizzy') ?></a>
 

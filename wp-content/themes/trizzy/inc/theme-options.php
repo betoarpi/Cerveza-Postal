@@ -449,6 +449,18 @@ array(
   'class'       => '',
   'section'     => 'portfolio'
   ),
+array(
+  'label'       => 'Captions in portfolio gallery',
+  'id'          => 'pp_portfolio_caption',
+  'type'        => 'on_off',
+  'desc'        => '',
+  'std'         => 'off',
+  'rows'        => '',
+  'post_type'   => '',
+  'taxonomy'    => '',
+  'class'       => '',
+  'section'     => 'portfolio'
+  ),
 
 array(
   'label'       => 'Show recent items on single portfolio view only from the same category as the current item',
@@ -770,6 +782,50 @@ array(
   'rows'        => '',
   'post_type'   => '',
   'condition'   => 'pp_shop_slider_on:is(on)',
+  'taxonomy'    => '',
+  'class'       => '',
+  'section'     => 'woocommerce'
+  ),
+
+array(
+  'label'       => 'Share button on product page',
+  'id'          => 'pp_woo_share',
+  'type'        => 'checkbox',
+  'desc'        => 'Choose which buttons to display.',
+  'choices'     => array(
+    array (
+      'label'       => 'Facebook',
+      'value'       => 'facebook'
+      ),
+    array (
+      'label'       => 'Pinterest',
+      'value'       => 'pinit'
+      ),
+    array (
+      'label'       => 'Twitter',
+      'value'       => 'twitter'
+      ),
+    array (
+      'label'       => 'Google Plus',
+      'value'       => 'gplus'
+      ),
+    ),
+  'std'         => '',
+  'rows'        => '',
+  'post_type'   => '',
+  'taxonomy'    => '',
+  'class'       => '',
+  'section'     => 'woocommerce'
+  ),
+
+array(
+  'label'       => 'Revert Product Gallery to original WooCommerce gallery',
+  'id'          => 'pp_product_default_gallery',
+  'type'        => 'on_off',
+  'desc'        => 'This will remove Royal Slider and show original gallery for WooCommerce - makes it compatible with some 3rd party plugins',
+  'std'         => 'off',
+  'rows'        => '',
+  'post_type'   => '',
   'taxonomy'    => '',
   'class'       => '',
   'section'     => 'woocommerce'

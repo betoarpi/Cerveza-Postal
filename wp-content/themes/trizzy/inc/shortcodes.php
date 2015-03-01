@@ -131,6 +131,9 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
                     if ( $product->is_on_sale() ) :
                         $output .= '<span class="onsale">' . __( 'Sale!', 'trizzy' ) . '</span>';
                     endif;
+                    if ( !$product->is_in_stock() ) :
+                        $output .= '<span class="onsale soldout">'.__('Sold Out','trizzy').'</span>';
+                    endif;
                     if(!empty($hoverid)) {
                         $output .='<div class="mediaholder">';
                     } else {
@@ -1134,7 +1137,7 @@ function pp_happytestimonials($atts, $content ) {
     <div id="showbiz_left_'.$randID.'" class="sb-navigation-left-alt alt"><i class="fa fa-angle-left"></i></div>
 
     <!-- ShowBiz Carousel -->
-    <div id="happy-clients" class="happy-clients showbiz-container  carousel columns '.$width.'" >
+    <div id="happy-clients" class="happy-clients showbiz-container  carousel " >
 
     <!-- Portfolio Entries -->
     <div class="showbiz our-clients" data-left="#showbiz_left_'.$randID.'" data-right="#showbiz_right_'.$randID.'">
@@ -1394,7 +1397,7 @@ function pp_share_btn($atts) {
     <div class="share-buttons">
     <ul>
         <li><a href="#">'.__("Share","trizzy").'</a></li>';
-        if(!empty($facebook)) $output .= '<li class="share-facebook"><a target="_blank" href="https://www.facebook.com/sharer.php?s=100&amp;p[title]=' . esc_attr($title) . '&amp;p[url]=' . $url . '&amp;p[summary]=' . esc_attr($summary) . '&amp;p[images][0]=' . $imageurl . '"">Facebook</a></li>';
+        if(!empty($facebook)) $output .= '<li class="share-facebook"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=' . $url . '">Facebook</a></li>';
         if(!empty($pinit)) $output .= '<li class="share-pinit"><a target="_blank" href="http://pinterest.com/pin/create/button/?url=' . $url . '&amp;description=' . esc_attr($summary) . '&media=' . $imageurl . '" onclick="window.open(this.href); return false;">Pin it</a></li>';
         if(!empty($gplus)) $output .= '<li class="share-gplus"><a target="_blank" href="https://plus.google.com/share?url=' . $url . '&amp;title="' . esc_attr($title) . '" onclick=\'javascript:window.open(this.href, "", "menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600");return false;\'>Google Plus</a></li>';
         if(!empty($twitter)) $output .= '<li class="share-twitter"><a target="_blank"  href="https://twitter.com/share?url=' . $url . '&amp;text=' . esc_attr($summary ). '" title="' . __( 'Twitter', 'trizzy' ) . '">Twitter</a></li>';

@@ -178,6 +178,9 @@ function trizzy_woocommerce_recent_products_integrateWithVC() {
         'heading' => __( 'Elements to show', 'trizzy' ),
         'param_name' => 'per_page',
         'value' => array(
+          '1' => '1',
+          '2' => '2',
+          '3' => '3',
           '4' => '4',
           '5' => '5',
           '6' => '6',

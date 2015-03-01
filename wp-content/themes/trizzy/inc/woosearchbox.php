@@ -73,17 +73,19 @@ $background = ot_get_option('pp_shop_search_bg');
                     <select class="" data-holder="<?php _e('Categories','trizzy'); ?>" name="trizzy_product_cat[]" multiple="multiple">
                         <?php
                         $theterms = get_terms('product_cat');
-                        foreach ($theterms as $term) :
-                            echo "<option value='".$term->slug."'";
-                                if(isset($_GET['trizzy_product_cat'])) {
-                                    if(is_array($_GET['trizzy_product_cat'])) {
-                                        if(in_array($term->slug, $_GET['trizzy_product_cat'])) { echo 'selected="selected"'; }
-                                    } else {
-                                        $_GET['trizzy_product_cat'] == $term->slug ? ' selected="selected"' : '';
+                        if(!empty($theterms)) {
+                            foreach ($theterms as $term) :
+                                echo "<option value='".$term->slug."'";
+                                    if(isset($_GET['trizzy_product_cat'])) {
+                                        if(is_array($_GET['trizzy_product_cat'])) {
+                                            if(in_array($term->slug, $_GET['trizzy_product_cat'])) { echo 'selected="selected"'; }
+                                        } else {
+                                            $_GET['trizzy_product_cat'] == $term->slug ? ' selected="selected"' : '';
+                                        }
                                     }
-                                }
-                            echo ">".$term->name."</option>\n";
-                        endforeach; ?>
+                                echo ">".$term->name."</option>\n";
+                            endforeach;
+                        } ?>
                     </select>
                 </li>
                 <?php } ?>
@@ -93,16 +95,18 @@ $background = ot_get_option('pp_shop_search_bg');
                     <select class="" data-holder="<?php echo wc_attribute_label($attr); ?>" name="trizzy_<?php echo $attr; ?>[]" multiple="multiple">
                     <?php
                     $terms = get_terms($attr, array('hide_empty' => false));
-                    foreach ($terms as $term) {
-                        echo "<option value='".$term->slug."'";
-                            if(isset($_GET['trizzy_'.$attr])) {
-                                if(is_array($_GET['trizzy_'.$attr])) {
-                                    if(in_array($term->slug, $_GET['trizzy_'.$attr])) { echo 'selected="selected"'; }
-                                } else {
-                                    $_GET['trizzy_'.$attr] == $term->slug ? ' selected="selected"' : '';
+                    if(!empty($terms)) {
+                        foreach ($terms as $term) {
+                            echo "<option value='".$term->slug."'";
+                                if(isset($_GET['trizzy_'.$attr])) {
+                                    if(is_array($_GET['trizzy_'.$attr])) {
+                                        if(in_array($term->slug, $_GET['trizzy_'.$attr])) { echo 'selected="selected"'; }
+                                    } else {
+                                        $_GET['trizzy_'.$attr] == $term->slug ? ' selected="selected"' : '';
+                                    }
                                 }
-                            }
-                        echo ">".$term->name."</option>\n";
+                            echo ">".$term->name."</option>\n";
+                        }
                     }
                     $terms = ''; ?>
                     </select>

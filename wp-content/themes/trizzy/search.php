@@ -33,7 +33,7 @@ get_header(); ?>
 	             * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 	             */
 	            $type =  get_post_type();
-
+	            $layout = ot_get_option('pp_blog_layout');
 	            switch ($type) {
 	            	case 'product' :
 		            	get_template_part( 'postformats/searchproduct' );
@@ -41,25 +41,27 @@ get_header(); ?>
 	            	case 'post':
 		            	$format = get_post_format();
                 		if( false === $format  )  $format = 'standard';
-
-						$layout = ot_get_option('pp_blog_layout');
 						if($layout == 'masonry') {
 							get_template_part( 'postformats/masonry', $format );
 						} else {
 							get_template_part( 'postformats/content', $format );
 						}
-
-
-
 	            	break;
 
 	            	case 'page':
-
-	            		get_template_part( 'postformats/searchpage' );
+		            	if($layout == 'masonry') {
+		            		get_template_part( 'postformats/searchpagemasonry' );
+		            	} else {
+		            		get_template_part( 'postformats/searchpage' );
+		            	}
 	            	break;
 
 	            	case 'portfolio':
-	            		get_template_part( 'postformats/searchpf' );
+            			if($layout == 'masonry') {
+		            		get_template_part( 'postformats/searchpfmasonry' );
+		            	} else {
+		            		get_template_part( 'postformats/searchpf' );
+		            	}
 	            	break;
 
 	            	default:

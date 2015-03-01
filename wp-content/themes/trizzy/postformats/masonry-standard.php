@@ -1,11 +1,13 @@
 <!-- Post #1 -->
 <div class="one-third column masonry-item">
   <article id="post-<?php the_ID(); ?>" <?php post_class('from-the-blog'); ?>>
-    <?php if(has_post_thumbnail()) { ?>
-    <figure class="from-the-blog-image">
-      <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail();  ?></a>
-      <div class="hover-icon"></div>
-    </figure>
+    <?php if ( ! post_password_required() ) { ?>
+      <?php if(has_post_thumbnail()) { ?>
+      <figure class="from-the-blog-image">
+        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail();  ?></a>
+        <div class="hover-icon"></div>
+      </figure>
+      <?php } ?>
     <?php } ?>
     <section class="from-the-blog-content">
       <?php $link = get_permalink();  ?>

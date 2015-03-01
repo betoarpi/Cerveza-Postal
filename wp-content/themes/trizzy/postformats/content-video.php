@@ -1,10 +1,12 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<?php if ( ! post_password_required() ) { ?>
   <div class="embed">
     <?php
       $video = get_post_meta($post->ID, '_format_video_embed', true);
       if(wp_oembed_get($video)) { echo wp_oembed_get($video); } else { echo $video;}
     ?>
   </div>
+  <?php } ?>
   <section class="date">
     <span class="day"><?php echo get_the_date( 'j' ); ?></span>
     <span class="month"><?php echo get_the_date( 'M' ); ?></span>

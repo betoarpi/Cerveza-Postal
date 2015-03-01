@@ -53,7 +53,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 		<?php if ( ! WC()->cart->needs_shipping() || WC()->cart->ship_to_billing_address_only() ) : ?>
 
-			<h3><?php _e( 'Additional Information', 'woocommerce' ); ?></h3>
+			<h3 class="headline"><?php _e( 'Additional Information', 'woocommerce' ); ?></h3><span class="line" style="margin-bottom:35px;"></span><div class="clearfix"></div>
 
 		<?php endif; ?>
 

@@ -71,7 +71,8 @@ get_header($htype);
       ?>
      <div class="slider-padding">
         <div id="basic-slider" class="basic-slider royalSlider rsDefault">
-            <?php foreach( $images_array as $images ) : setup_postdata($images);
+            <?php foreach( $images_array as $images ) : 
+            setup_postdata($images);
               $attachment = wp_get_attachment_image_src($images->ID, 'full');
                 if($layout == 'half') {
                   $thumb = wp_get_attachment_image_src($images->ID, 'portfolio-half');
@@ -79,9 +80,10 @@ get_header($htype);
                   $thumb = wp_get_attachment_image_src($images->ID, 'portfolio-wide');
                 }
             ?>
+            
                 <a href="<?php echo $attachment[0] ?>" class="<?php if($slides > 1){ echo 'mfp-gallery';  } else { echo 'mfp-image'; } ?>" title="<?php echo $images->post_title; ?>" >
-                  <img src="<?php echo $thumb[0] ?>" alt="<?php echo $images->post_title; ?>" class="rsImg" />
-                  <?php if($captions == 'yes') { ?><div class="slide-caption"><h3><?php echo $images->post_title; ?></h3></div><?php } ?>
+                  <img src="<?php echo $thumb[0] ?>" alt="<?php echo $images->post_excerpt; ?>"  class="rsImg"/>
+                  <?php if($captions == 'on' && !empty( $images->post_excerpt)) { ?><div class="slide-caption"><h3><?php echo $images->post_excerpt; ?></h3></div><?php } ?>
                 </a>
 
             <?php endforeach;  ?>

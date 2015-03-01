@@ -1,0 +1,41 @@
+###a:65:{s:12:"pp_slider_on";s:2:"on";s:14:"pp_revo_slider";s:6:"trizzy";s:16:"pp_revo_sliderde";s:6:"trizzy";s:16:"pp_revo_slideren";s:6:"trizzy";s:16:"pp_revo_sliderpl";s:6:"trizzy";s:14:"pp_headericons";a:5:{i:0;a:3:{s:5:"title";s:8:"Facebook";s:13:"icons_service";s:8:"facebook";s:9:"icons_url";s:0:"";}i:1;a:3:{s:5:"title";s:7:"twitter";s:13:"icons_service";s:7:"twitter";s:9:"icons_url";s:0:"";}i:2;a:3:{s:5:"title";s:7:"Dribble";s:13:"icons_service";s:8:"dribbble";s:9:"icons_url";s:0:"";}i:3;a:3:{s:5:"title";s:11:"Google Plus";s:13:"icons_service";s:5:"gplus";s:9:"icons_url";s:0:"";}i:4;a:3:{s:5:"title";s:9:"Pinterest";s:13:"icons_service";s:9:"pinterest";s:9:"icons_url";s:0:"";}}s:18:"pp_menu_breakpoint";s:3:"767";s:14:"pp_logo_upload";s:47:"http://trizzy.purethe.me/files/2014/08/logo.png";s:21:"pp_logo_retina_upload";s:0:"";s:18:"pp_logo_area_width";s:1:"3";s:18:"pp_logo_top_margin";s:0:"";s:21:"pp_logo_bottom_margin";s:0:"";s:17:"pp_favicon_upload";s:0:"";s:9:"pp_search";s:2:"on";s:16:"pp_lang_switcher";s:2:"on";s:20:"pp_currency_switcher";s:2:"on";s:18:"pp_contact_details";s:2:"on";s:17:"pp_cdetails_email";s:17:" mail@example.com";s:17:"pp_cdetails_phone";s:14:"(564) 123 4567";s:13:"pp_copyrights";s:126:"© Theme by <a href="http://themeforest.net/user/purethemes/portfolio?ref=purethemes">Purethemes.net</a>. All Rights Reserved.";s:16:"pp_payment_icons";a:5:{i:0;a:3:{s:5:"title";s:4:"Visa";s:3:"url";s:0:"";s:13:"icons_service";s:4:"visa";}i:1;a:3:{s:5:"title";s:10:"MasterCard";s:3:"url";s:0:"";s:13:"icons_service";s:10:"mastercard";}i:2;a:3:{s:5:"title";s:6:"Skrill";s:3:"url";s:0:"";s:13:"icons_service";s:6:"skrill";}i:3;a:3:{s:5:"title";s:12:"MoneyBookers";s:3:"url";s:0:"";s:13:"icons_service";s:12:"moneybookers";}i:4;a:3:{s:5:"title";s:6:"PayPal";s:3:"url";s:0:"";s:13:"icons_service";s:6:"paypal";}}s:14:"pp_breadcrumbs";s:2:"on";s:15:"pp_pagecomments";s:3:"off";s:13:"pp_custom_css";s:1336:".product_meta { display: none; }
+.post-type-archive-product #menu-item-1632 { background-color: #505050; }
+.parallax-banner {margin-bottom: 5px !important; }
+.magazine-lead { margin-top:5px;}
+.products-categories img { width: 100%; }
+
+    @media only screen and (min-width: 768px) and (max-width: 990px) { .menu-item-1701 {display:none;} }
+
+.single-portfolio  #navigation .menu > li.current_page_parent#menu-item-1614 { background: #606060; }
+.related.products .onsale { right:0px;}
+
+.home.page-id-2360 #navigation.alt .menu .homepage#menu-item-1615 { background-color: #e6e6e6; }
+.home.page-id-2360 #navigation.alt .menu .homepage#menu-item-1615:hover { background-color: #3acf87; }
+
+body .wpb_row .showbiz-navigation { width: 53px; }
+
+#tagline {
+    color: #999;
+    border-left: 1px solid #e9e9e9;
+    margin: 7px 0 0 20px;
+    padding: 5px 0 5px 20px;
+    float: left;
+}
+
+.simple-home-logo a img { float: left; }
+
+.container .page .showbiz-container ul,
+.container .page figcaption ul,
+.container .page ul.widget-tabs,
+.container .page .showbiz ul,
+.container .page ul.ui-tabs-nav,
+.container .page ul.social-icons,
+.container .page ul.product-list,
+.container .page .widget ul {
+    margin-bottom: 0px;
+    margin-left: 0px;
+    list-style: none;
+}
+.related products .onsale,
+.container .page .onsale { right:0px;}
+";s:13:"pp_woo_layout";s:12:"left-sidebar";s:13:"pp_woocolumns";s:4:"four";s:15:"pp_woo_subtitle";s:22:"International Shipping";s:15:"pp_woo_parallax";s:2:"on";s:18:"pp_woo_parallax_bg";s:57:"http://trizzy.purethe.me/files/2014/08/titlebar_bg_01.jpg";s:21:"pp_woo_parallax_color";s:7:"#000000";s:23:"pp_woo_parallax_opacity";s:4:"0.46";s:11:"pp_wooitems";s:1:"9";s:18:"pp_woo_header_cart";s:2:"on";s:17:"pp_shop_slider_on";s:3:"off";s:19:"pp_shop_revo_slider";s:6:"trizzy";s:21:"pp_shop_revo_sliderde";s:6:"trizzy";s:21:"pp_shop_revo_slideren";s:6:"trizzy";s:21:"pp_shop_revo_sliderpl";s:6:"trizzy";s:17:"pp_shop_search_on";s:2:"on";s:18:"pp_woosearch_label";s:31:"Search For The Finest Products:";s:24:"pp_woosearch_placehodler";s:18:"e.g. ninja t-shirt";s:19:"pp_woosearch_adv_on";s:2:"on";s:20:"pp_woosearch_cats_on";s:2:"on";s:17:"pp_woosearch_attr";a:2:{i:0;s:8:"pa_color";i:1;s:7:"pa_size";}s:21:"pp_woosearch_price_on";s:2:"on";s:17:"pp_shop_search_bg";a:6:{s:16:"background-color";s:0:"";s:17:"background-repeat";s:0:"";s:21:"background-attachment";s:0:"";s:19:"background-position";s:13:"center bottom";s:15:"background-size";s:4:"100%";s:16:"background-image";s:53:"http://trizzy.purethe.me/files/2014/08/searchbg21.jpg";}s:14:"pp_blog_layout";s:13:"right-sidebar";s:18:"pp_masonry_excerpt";s:2:"12";s:14:"pp_meta_single";a:4:{i:0;s:6:"author";i:1;s:4:"date";i:3;s:3:"cat";i:4;s:3:"com";}s:12:"pp_meta_blog";a:4:{i:0;s:6:"author";i:1;s:4:"date";i:3;s:3:"cat";i:4;s:3:"com";}s:12:"pp_blog_page";s:8:"The Blog";s:13:"pp_related_pf";s:2:"on";s:16:"pp_samefilter_pf";s:3:"all";s:16:"pp_recenttext_pf";s:11:"Recent Work";s:19:"pp_portfolio_layout";s:1:"3";s:17:"pp_portfolio_page";s:9:"Portfolio";s:23:"pp_portfolio_videothumb";s:5:"video";s:21:"pp_portfolio_showpost";s:1:"9";s:15:"pp_contact_zoom";s:1:"5";s:18:"pp_contact_maptype";s:7:"ROADMAP";s:14:"pp_contact_map";a:2:{i:0;a:3:{s:5:"title";s:0:"";s:7:"address";s:44:"45 Park Avenue, Apt. 303  New York, NY 10016";s:7:"content";s:106:"<strong style="font-size: 14px;">Our Office</strong></br>45 Park Avenue, Apt. 303 </br>New York, NY 10016 ";}i:1;a:3:{s:5:"title";s:0:"";s:7:"address";s:41:"1609 N Hamlin Ave, Chicago, IL 60647, USA";s:7:"content";s:98:"<strong style="font-size: 14px;">Our Office</strong></br>1609 N Hamlin Ave </br>Chicago, IL 60647,";}}s:16:"trizzy_body_font";s:0:"";s:16:"trizzy_menu_font";s:0:"";s:16:"trizzy_logo_font";s:0:"";s:19:"trizzy_headers_font";s:0:"";}###

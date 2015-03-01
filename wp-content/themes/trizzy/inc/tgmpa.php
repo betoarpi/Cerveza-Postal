@@ -15,7 +15,7 @@ $plugins = array(
         'name'                  => 'Revolution Slider',
         'slug'                  => 'revslider',
         'source'                => get_template_directory_uri() . '/plugins/revslider.zip',
-        'version'               => '4.6.3',
+        'version'               => '4.6.5',
         'required'              => true,
     ),
     array(
@@ -23,7 +23,7 @@ $plugins = array(
         'slug'                  => 'js_composer', // The plugin slug (typically the folder name)
         'source'                => get_stylesheet_directory() . '/plugins/js_composer.zip', // The plugin source
         'required'              => true, // If false, the plugin is only 'recommended' instead of required
-        'version'               => '4.3.4', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+        'version'               => '4.4.2', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
     ),
     array(
         'name'                  => 'Purethemes.net Shortcodes',
@@ -60,7 +60,7 @@ $plugins = array(
     array(
         'name'                  => 'WooCommerce', // The plugin name
         'slug'                  => 'woocommerce', // The plugin slug (typically the folder name)
-        'version'               => '2.2.7',
+        'version'               => '2.3.1',
         'required'              => false, // If false, the plugin is only 'recommended' instead of required
     ),
     array(

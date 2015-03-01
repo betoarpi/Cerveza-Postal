@@ -1,5 +1,6 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-<?php
+<?php 
+if ( ! post_password_required() ) { 
   $quote_content = get_post_meta($post->ID, '_format_quote_content', TRUE);
   $quote_source  = get_post_meta($post->ID, '_format_quote_source_url', TRUE);
   $quote_author  = get_post_meta($post->ID, '_format_quote_source_name', TRUE);
@@ -13,7 +14,8 @@ if(!empty($quote_content)) {?>
       <?php if(!empty($quote_source)) { ?></a> <?php } ?>
     </blockquote>
   </figure>
-<?php } ?>
+<?php } 
+} ?>
   <section class="date">
     <span class="day"><?php echo get_the_date( 'j' ); ?></span>
     <span class="month"><?php echo get_the_date( 'M' ); ?></span>

@@ -10,10 +10,49 @@
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 global $post, $product, $woocommerce;
+$gallerytype = ot_get_option('pp_product_default_gallery','off');
+
+
+
 $layout         = get_post_meta($post->ID, 'pp_sidebar_layout', TRUE);
 if(empty($layout)) { $layout = 'full-width'; }
 $sliderstyle    = get_post_meta($post->ID, 'pp_woo_thumbnail_style', TRUE);
-?>
+
+if($gallerytype == 'on') { ?>
+<?php echo $layout != 'full-width' ? '<div class="six columns alpha">' : '<div class="eight columns">'; ?>
+    <div class="images">
+
+        <?php
+            if ( has_post_thumbnail() ) {
+
+                $image_title = esc_attr( get_the_title( get_post_thumbnail_id() ) );
+                $image_link  = wp_get_attachment_url( get_post_thumbnail_id() );
+                $image       = get_the_post_thumbnail( $post->ID, apply_filters( 'single_product_large_thumbnail_size', 'shop_single' ), array(
+                    'title' => $image_title
+                    ) );
+
+                $attachment_count = count( $product->get_gallery_attachment_ids() );
+
+                if ( $attachment_count > 0 ) {
+                    $gallery = '[product-gallery]';
+                } else {
+                    $gallery = '';
+                }
+
+                echo apply_filters( 'woocommerce_single_product_image_html', sprintf( '<a href="%s" itemprop="image" class="woocommerce-main-image zoom" title="%s" data-rel="prettyPhoto' . $gallery . '">%s</a>', $image_link, $image_title, $image ), $post->ID );
+
+            } else {
+
+                echo apply_filters( 'woocommerce_single_product_image_html', sprintf( '<img src="%s" alt="%s" />', wc_placeholder_img_src(), __( 'Placeholder', 'woocommerce' ) ), $post->ID );
+
+            }
+        ?>
+
+        <?php do_action( 'woocommerce_product_thumbnails' ); ?>
+
+    </div>
+</div>
+<?php } else { ?>
 <?php echo $layout != 'full-width' ? '<div class="six columns alpha">' : '<div class="eight columns">'; ?>
     <div class="slider-padding ">
 
@@ -59,7 +98,7 @@ $sliderstyle    = get_post_meta($post->ID, 'pp_woo_thumbnail_style', TRUE);
                     $output .='<div id="'.($sliderstyle == 'horizontal' ? 'product-slider' : 'product-slider-vertical').'" class="royalSlider rsDefault images">';
                     $output .='<a href="'.$image_link.'" itemprop="image" class="mfp-gallery" title="'.$image_title.'"><img src="'.$image[0].'" class="rsImg" data-rsTmb="'.$imageRSthumb[0].'" /></a>';
                 } else {
-                    $output .='<div class="single-product-image">';
+                    $output .='<div id="product-slider" class="royalSlider rsDefault">';
                     $output .='<a href="'.$image_link.'" itemprop="image" class="mfp-image" title="'.$image_title.'"><img src="'.$image[0].'" class="rsImg"  /></a>';
                 }
                 if($hover) {
@@ -81,3 +120,4 @@ $sliderstyle    = get_post_meta($post->ID, 'pp_woo_thumbnail_style', TRUE);
         <div class="clearfix"></div>
     </div>
 </div>
+<?php } //eof else standard gallery ?>
