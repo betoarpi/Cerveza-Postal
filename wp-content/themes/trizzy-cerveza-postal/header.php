@@ -86,6 +86,18 @@
 					echo '<li>' . get_template_part( 'inc/mini_cart') . '</li></ul>';
 				}
 				?>
+				<?php
+					if ( is_user_logged_in() ) {
+						echo '<a href="#">Bienvenido';
+						$current_user = wp_get_current_user(); 
+						echo get_avatar( $id_or_email, $size, $default, $alt );
+						echo '' . $current_user->user_login .'</a>';
+
+					} else {
+						echo '<a href="http://cervezapostal.mx/deploy/wp-login.php" class="MenuCanvas-close glyphicon glyphicon-remove">Iniciar Sesion</a>';
+					}
+				?>
+			
 			</div>
 		</div>
 	</div>
