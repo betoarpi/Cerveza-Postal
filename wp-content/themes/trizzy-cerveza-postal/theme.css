@@ -140,6 +140,11 @@ h6 {
 #cart .cart-list ul li.empty {
   color: #fff;
 }
+#cart .cart-list .cart_list_product a {
+  width: initial;
+  color: #c0dfe0;
+  height: 23px;
+}
 #cart .cart-list .cart-buttons {
   border-top: 1px solid rgba(255,255,255,0.3);
   margin-top: 10px;
@@ -170,6 +175,48 @@ h6 {
 }
 .social-icons li a {
   background: none;
+}
+.CP-user img {
+  height: 36px !important;
+  float: right;
+}
+.CP-user p {
+  float: right;
+  margin: 0;
+  line-height: 36px;
+  color: #c0dfe0;
+  font-size: 16px;
+  padding: 0 5px;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.CP-user:hover p {
+  background: #c0dfe0;
+  color: #183e58;
+}
+.CP-login {
+  color: #c0dfe0 !important;
+  margin: 0;
+  line-height: 36px;
+  font-size: 16px;
+  padding: 0 10px;
+  float: right;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.CP-login i {
+  margin-right: 5px;
+  font-size: 18px;
+}
+.CP-login:hover {
+  background: #c0dfe0;
+  color: #183e58 !important;
 }
 ul.top-bar-menu li a,
 ul.top-bar-menu li i {
@@ -561,5 +608,6 @@ textarea:focus {
   }
   #logo a img {
     margin: 0 auto;
+    width: 100px;
   }
 }

@@ -33,7 +33,7 @@
 		<div class="container">
 
 			<!-- Top Bar Menu -->
-			<div class="ten columns">
+			<div class="eight columns">
 				<ul class="top-bar-menu">
 					<?php
 					if(ot_get_option( 'pp_contact_details') == 'on') {
@@ -75,8 +75,17 @@
 			</div>
 
 			<!-- Social Icons -->
-			<div class="six columns">
+			<div class="eight columns">
 				<?php /* get the slider array */
+				if ( is_user_logged_in() ) {
+					echo '<a class="CP-user" href="#"><p>Bienvenido';
+					$current_user = wp_get_current_user(); 
+					echo ' ' . $current_user->user_login.'</p>';
+					echo get_avatar( $id_or_email, $size, $default, $alt ).'</a>';
+
+				} else {
+					echo '<a href="'.home_url().'/wp-login.php" class="CP-login"><i class="fa fa-sign-in"></i> Iniciar Sesion</a>';
+				}
 				$headericons = ot_get_option( 'pp_headericons', array() );
 				if ( !empty( $headericons ) ) {
 					echo '<ul class="social-icons">';
@@ -86,18 +95,6 @@
 					echo '<li>' . get_template_part( 'inc/mini_cart') . '</li></ul>';
 				}
 				?>
-				<?php
-					if ( is_user_logged_in() ) {
-						echo '<a href="#">Bienvenido';
-						$current_user = wp_get_current_user(); 
-						echo get_avatar( $id_or_email, $size, $default, $alt );
-						echo '' . $current_user->user_login .'</a>';
-
-					} else {
-						echo '<a href="http://cervezapostal.mx/deploy/wp-login.php" class="MenuCanvas-close glyphicon glyphicon-remove">Iniciar Sesion</a>';
-					}
-				?>
-			
 			</div>
 		</div>
 	</div>

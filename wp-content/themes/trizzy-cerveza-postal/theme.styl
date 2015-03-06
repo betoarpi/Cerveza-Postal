@@ -157,6 +157,12 @@ h6
 		ul
 			li.empty
 				color white
+		.cart_list_product
+			a
+				width initial
+				color lighterBlue
+				height 23px
+			
 		
 		.cart-buttons
 			border-top 1px solid rgba(255,255,255,0.3)
@@ -177,10 +183,40 @@ h6
 	
 	span
 		color blue !important
-
-.social-icons li a 
-	background none
-
+.social-icons
+	li
+		a
+			background none
+.CP-user
+	img
+		height 36px !important
+		float right
+	p
+		float right
+		margin 0
+		line-height 36px
+		color lighterBlue
+		font-size 16px
+		padding 0 5px
+		transition all 0.2s
+	&:hover
+		p
+			background lighterBlue
+			color #183e58
+.CP-login
+	color lighterBlue !important
+	margin 0
+	line-height 36px
+	font-size 16px
+	padding 0 10px
+	float right
+	transition all 0.2s
+	i
+		margin-right 5px
+		font-size 18px
+	&:hover
+		background lighterBlue
+		color #183e58 !important
 ul.top-bar-menu li a,
 ul.top-bar-menu li i
 	color lighterBlue
@@ -561,3 +597,4 @@ textarea:focus
 		a 
 			img 
 				margin 0 auto
+				width 100px
