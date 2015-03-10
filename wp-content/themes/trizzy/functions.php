@@ -188,6 +188,7 @@ function trizzy_scripts() {
 	wp_enqueue_script( 'smoothscroll', get_template_directory_uri() . '/js/smoothscroll.js', array(), '20140612', true );
     wp_enqueue_script( 'stacktable', get_template_directory_uri() . '/js/stacktable.js', array(), '20140612', true );
     wp_enqueue_script( 'multipleselect', get_template_directory_uri() . '/js/jquery.multiple.select.js', array(), '20140612', true );
+
     //add check for contact page
     wp_enqueue_script( 'google-maps', 'http://maps.google.com/maps/api/js?sensor=true' );
 	wp_enqueue_script( 'gmaps', get_template_directory_uri() . '/js/jquery.gmaps.min.js', array(), '20140612', true );

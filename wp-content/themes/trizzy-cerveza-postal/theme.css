@@ -176,11 +176,14 @@ h6 {
 .social-icons li a {
   background: none;
 }
-.CP-user img {
+.CP-perfil {
+  float: right;
+}
+.CP-perfil .CP-user img {
   height: 36px !important;
   float: right;
 }
-.CP-user p {
+.CP-perfil .CP-user p {
   float: right;
   margin: 0;
   line-height: 36px;
@@ -193,9 +196,73 @@ h6 {
   -ms-transition: all 0.2s;
   transition: all 0.2s;
 }
-.CP-user:hover p {
+.CP-perfil .CP-user:hover p {
   background: #c0dfe0;
   color: #183e58;
+}
+.CP-perfil .CP-perfilOptions {
+  background: rgba(13,34,48,0.9);
+  border: 1px solid #183e58;
+  -webkit-box-shadow: 0 0 5px 2px rgba(0,0,0,0.4);
+  box-shadow: 0 0 5px 2px rgba(0,0,0,0.4);
+  color: #fff;
+  position: absolute;
+  right: 0;
+  margin-top: 50px;
+  width: 280px;
+  z-index: 999;
+}
+.CP-perfil .CP-perfilOptions .arrow {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #183e58;
+  position: absolute;
+  top: -5px;
+  right: 25px;
+}
+.CP-perfil .CP-perfilOptions .name {
+  background: #183e58;
+  padding: 5px 0;
+  text-align: center;
+  margin: 0;
+  color: #c0dfe0;
+}
+.CP-perfil .CP-perfilOptions .name span {
+  color: #d14728;
+}
+.CP-perfil .CP-perfilOptions .name i {
+  color: #d14728;
+  font-size: 15px;
+  padding: 0 3px;
+}
+.CP-perfil .CP-perfilOptions .name .mini {
+  font-size: 10px;
+}
+.CP-perfil .CP-perfilOptions a {
+  color: #fff;
+  line-height: 26px;
+  float: left;
+  width: 90%;
+  padding: 0 5%;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+  font-size: 14px;
+}
+.CP-perfil .CP-perfilOptions a i {
+  font-size: 18px;
+  padding-right: 5px;
+}
+.CP-perfil .CP-perfilOptions a:hover {
+  background: #c0dfe0;
+  color: #0d2230;
+}
+.CP-perfil .CP-perfilOptions a:hover i {
+  color: #51a2a5;
 }
 .CP-login {
   color: #c0dfe0 !important;
@@ -567,6 +634,12 @@ textarea:focus {
 }
 .rev_slider {
   touch-action: initial !important;
+}
+.ParallaxImg {
+  top: 20px !important;
+}
+.ParallaxImg-banner {
+  top: 35px !important;
 }
 @media only screen and (max-width: 1389px) and (min-width: 960px) {
   .fullwidth .fullwidth-element.home-slider {

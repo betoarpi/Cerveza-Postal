@@ -187,22 +187,75 @@ h6
 	li
 		a
 			background none
-.CP-user
-	img
-		height 36px !important
-		float right
-	p
-		float right
-		margin 0
-		line-height 36px
-		color lighterBlue
-		font-size 16px
-		padding 0 5px
-		transition all 0.2s
-	&:hover
+.CP-perfil
+	float right
+	.CP-user
+		img
+			height 36px !important
+			float right
 		p
-			background lighterBlue
-			color #183e58
+			float right
+			margin 0
+			line-height 36px
+			color lighterBlue
+			font-size 16px
+			padding 0 5px
+			transition all 0.2s
+		&:hover
+			p
+				background lighterBlue
+				color #183e58
+	.CP-perfilOptions
+		background rgba(13,34,48,0.9)
+		border 1px solid #183e58
+		box-shadow 0 0 5px 2px rgba(0,0,0,0.4)
+		color #fff
+		position absolute
+		right 0
+		margin-top 50px
+		width 280px
+		z-index 999
+		.arrow
+			width 0
+			height 0
+			border-left 5px solid transparent
+			border-right 5px solid transparent
+			border-bottom 5px solid #183e58
+			position absolute
+			top -5px
+			right 25px
+		.name
+			background #183e58
+			padding 5px 0
+			text-align center
+			margin 0
+			color lighterBlue
+			span
+				color orange
+			i
+				color orange
+				font-size 15px
+				padding 0 3px
+			.mini
+				font-size 10px
+		a
+			color white
+			line-height 26px
+			float left
+			width 90%
+			padding 0 5%
+			transition all 0.3s
+			font-size 14px
+			
+			i
+				font-size 18px
+				padding-right 5px
+			&:hover
+				background lighterBlue
+				color darkBlue
+				i
+					color lightBlue
+		
 .CP-login
 	color lighterBlue !important
 	margin 0
@@ -553,6 +606,11 @@ textarea:focus
 //Revolution Slider
 .rev_slider
 	touch-action initial !important
+//Parallax-Img
+.ParallaxImg
+	top 20px !important
+.ParallaxImg-banner
+	top 35px !important
 // Media queries fixes
 @media only screen and (max-width: 1389px) and (min-width: 960px)
 	.fullwidth .fullwidth-element.home-slider

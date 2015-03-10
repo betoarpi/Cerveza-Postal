@@ -1,5 +1,6 @@
 <?php 
 add_action('init', 'cptui_register_my_cpt_slider');
+wp_enqueue_script( 'ParallaxImg', get_theme_root_uri() . '/trizzy-cerveza-postal/js/ParallaxImg.js', array(), '20140612', true );
 function cptui_register_my_cpt_slider() {
 register_post_type('slider', array(
 'label' => 'Slides',
