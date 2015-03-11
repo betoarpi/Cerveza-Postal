@@ -147,7 +147,7 @@
 })(this.jQuery);
 </script>
 <?php } //eof is_page_template ?>
+<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/cp-scripts.js"></script>
 <?php wp_footer(); ?>
-
 </body>
 </html>
