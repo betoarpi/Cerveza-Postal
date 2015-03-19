@@ -182,6 +182,9 @@ h6 {
 .CP-perfil {
   float: right;
 }
+.CP-perfil .CP-user {
+  float: left;
+}
 .CP-perfil .CP-user img {
   height: 36px !important;
   float: right;
@@ -192,7 +195,7 @@ h6 {
   line-height: 36px;
   color: #c0dfe0;
   font-size: 16px;
-  padding: 0 5px;
+  padding: 0 10px;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   -o-transition: all 0.2s;
@@ -203,19 +206,30 @@ h6 {
   background: #c0dfe0;
   color: #183e58;
 }
-.CP-perfil .CP-perfilOptions {
+.CP-perfil .CP-user.CP-userHovered p {
+  background: #c0dfe0;
+  color: #183e58;
+}
+.CP-perfil .CP-perfilOptionsWrapper {
+  cursor: pointer;
+  display: none;
+  padding-top: 50px;
+  position: absolute;
+  right: 0;
+  width: 280px;
+  z-index: 999;
+}
+.CP-perfil .CP-perfilOptionsWrapper .CP-perfilOptions {
   background: rgba(13,34,48,0.9);
   border: 1px solid #183e58;
   -webkit-box-shadow: 0 0 5px 2px rgba(0,0,0,0.4);
   box-shadow: 0 0 5px 2px rgba(0,0,0,0.4);
   color: #fff;
-  position: absolute;
-  right: 0;
-  margin-top: 50px;
-  width: 280px;
-  z-index: 999;
+  float: left;
+  position: relative;
+  width: 100%;
 }
-.CP-perfil .CP-perfilOptions .arrow {
+.CP-perfil .CP-perfilOptionsWrapper .CP-perfilOptions .arrow {
   width: 0;
   height: 0;
   border-left: 5px solid transparent;
@@ -225,47 +239,51 @@ h6 {
   top: -5px;
   right: 25px;
 }
-.CP-perfil .CP-perfilOptions .name {
+.CP-perfil .CP-perfilOptionsWrapper .CP-perfilOptions .name {
   background: #183e58;
   padding: 5px 0;
   text-align: center;
   margin: 0;
   color: #c0dfe0;
 }
-.CP-perfil .CP-perfilOptions .name span {
+.CP-perfil .CP-perfilOptionsWrapper .CP-perfilOptions .name span {
   color: #d14728;
 }
-.CP-perfil .CP-perfilOptions .name i {
+.CP-perfil .CP-perfilOptionsWrapper .CP-perfilOptions .name i {
   color: #d14728;
-  font-size: 15px;
+  font-size: 16px;
   padding: 0 3px;
 }
-.CP-perfil .CP-perfilOptions .name .mini {
+.CP-perfil .CP-perfilOptionsWrapper .CP-perfilOptions .name .mini {
   font-size: 10px;
 }
-.CP-perfil .CP-perfilOptions a {
+.CP-perfil .CP-perfilOptionsWrapper .CP-perfilOptions a {
+  border-bottom: 1px solid rgba(255,255,255,0.08);
   color: #fff;
   line-height: 26px;
   float: left;
   width: 90%;
-  padding: 0 5%;
+  padding: 3px 5%;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
   -ms-transition: all 0.3s;
   transition: all 0.3s;
-  font-size: 14px;
+  font-size: 16px;
 }
-.CP-perfil .CP-perfilOptions a i {
+.CP-perfil .CP-perfilOptionsWrapper .CP-perfilOptions a i {
   font-size: 18px;
+  margin-right: 10px;
   padding-right: 5px;
+  text-align: right;
+  width: 20px;
 }
-.CP-perfil .CP-perfilOptions a:hover {
+.CP-perfil .CP-perfilOptionsWrapper .CP-perfilOptions a:hover {
   background: #c0dfe0;
   color: #0d2230;
 }
-.CP-perfil .CP-perfilOptions a:hover i {
-  color: #51a2a5;
+.CP-perfil .CP-perfilOptionsWrapper .CP-perfilOptions a:hover i {
+  color: #0d2230;
 }
 .CP-login {
   color: #c0dfe0 !important;
@@ -644,6 +662,97 @@ textarea:focus {
 .ParallaxImg-banner {
   top: 35px !important;
 }
+.PopUp {
+  position: absolute;
+  top: 0;
+  lef: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.6);
+  height: 100%;
+  overflow: hidden;
+  z-index: 200;
+}
+.PopUp .PopUp-active {
+  top: 30px !important;
+}
+.PopUp .PopUp-container {
+  background: url("img/fondoPopUp.png");
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: #e9e3d5;
+  width: 600px;
+  height: 600px;
+  top: 110%;
+  position: fixed;
+  right: 50%;
+  -webkit-transform: translateX(50%);
+  -moz-transform: translateX(50%);
+  -o-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  transform: translateX(50%);
+  text-align: right;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.PopUp .PopUp-container .PopUp-logoContainer {
+  max-width: 150px;
+  display: inline-block;
+  margin: 7%;
+}
+.PopUp .PopUp-container .PopUp-logoContainer img {
+  width: 100%;
+}
+.PopUp .PopUp-container .PopUp-infoContainer {
+  text-align: center;
+  margin-top: 30px;
+}
+.PopUp .PopUp-container .PopUp-infoContainer .PopUp-question {
+  font-size: 40px;
+  margin: 0;
+}
+.PopUp .PopUp-container .PopUp-infoContainer .PopUp-question .simbol {
+  color: #0d2230;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  display: inline-block;
+  margin: 0;
+  font-weight: normal;
+}
+.PopUp .PopUp-container .PopUp-infoContainer .PopUp-awnser {
+  margin-top: 10px;
+}
+.PopUp .PopUp-container .PopUp-infoContainer .PopUp-awnser a {
+  display: inline-block;
+  background: #d3472a;
+  color: #fff;
+  padding: 5px 0;
+  width: 90px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.PopUp .PopUp-container .PopUp-infoContainer .PopUp-awnser a:first-child {
+  margin-right: 60px;
+}
+.PopUp .PopUp-container .PopUp-infoContainer .PopUp-info {
+  margin: 40px 0;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 0 20px;
+}
+.PopUp .PopUp-container .PopUp-infoContainer .PopUp-info a {
+  color: #d3472a;
+}
 @media only screen and (max-width: 1389px) and (min-width: 960px) {
   .fullwidth .fullwidth-element.home-slider {
     width: 100%;
@@ -674,6 +783,32 @@ textarea:focus {
   }
 }
 @media only screen and (max-width: 767px) {
+  .PopUp .PopUp-active {
+    top: 10px !important;
+  }
+  .PopUp .PopUp-container {
+    width: 96%;
+    right: 0%;
+    left: 2%;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    position: relative;
+  }
+  .PopUp .PopUp-container .PopUp-infoContainer {
+    margin-top: 20px;
+  }
+  .PopUp .PopUp-container .PopUp-infoContainer .PopUp-question {
+    font-size: 30px;
+  }
+  .PopUp .PopUp-container .PopUp-infoContainer .PopUp-awnser a:first-child {
+    margin-right: 10px;
+  }
+  .PopUp .PopUp-container .PopUp-infoContainer .PopUp-info {
+    font-size: 14px;
+  }
   a.menu-trigger {
     background: #183e58 !important;
   }
@@ -685,5 +820,8 @@ textarea:focus {
   #logo a img {
     margin: 0 auto;
     width: 100px;
+  }
+  #top-bar .eight.columns {
+    width: 50%;
   }
 }

@@ -123,6 +123,24 @@
 </div>
 
 <?php if ( is_page_template( 'template-contact.php' ) ) { ?>
+<!-- Pop Up -->
+<div class="PopUp">
+    <div class="PopUp-container">
+        <figure class="PopUp-logoContainer">
+            <img src="<?php echo get_stylesheet_directory_uri();?>/img/logoB.png" alt="Cerveza Postal">
+        </figure>
+        <div class="PopUp-infoContainer">
+            <p class="PopUp-question"><strong class="simbol">?</strong>Eres mayor de edad?</p>
+            <div class="PopUp-awnser">
+                <a href="#" class="PopUp-yes">Si</a>
+                <a href="http://www.alcoholinformate.org.mx/" class="PopUp-no">No</a>
+            </div>
+            <p class="PopUp-info">Al acceder a este sitio, manifiesta su conformidad con el <a href="#">aviso de privacidad</a> y el <a href="#">uso de cookies</a> de este sitio web.
+            </br></br>para mas información, lea nuestro <a href="#">aviso de privacidad.</p>
+        </div>
+    </div>
+</div>
+<!-- PopUp-End -->
 <script type="text/javascript">
 (function($){
     $(document).ready(function(){
@@ -147,7 +165,7 @@
 })(this.jQuery);
 </script>
 <?php } //eof is_page_template ?>
+<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/cp-scripts.js"></script>
 <?php wp_footer(); ?>
-
 </body>
 </html>

@@ -21,7 +21,24 @@
 
 	<?php wp_head(); ?>
 </head>
-
+<!-- Pop Up -->
+<div class="PopUp">
+    <div class="PopUp-container">
+        <figure class="PopUp-logoContainer">
+            <img src="<?php echo get_stylesheet_directory_uri();?>/img/logoB.png" alt="Cerveza Postal">
+        </figure>
+        <div class="PopUp-infoContainer">
+            <p class="PopUp-question"><strong class="simbol">?</strong>Eres mayor de edad?</p>
+            <div class="PopUp-awnser">
+                <a href="#" class="PopUp-yes">Si</a>
+                <a href="http://www.alcoholinformate.org.mx/" class="PopUp-no">No</a>
+            </div>
+            <p class="PopUp-info">Al acceder a este sitio, manifiesta su conformidad con el <a href="#">aviso de privacidad</a> y el <a href="#">uso de cookies</a> de este sitio web.
+            </br></br>para mas información, lea nuestro <a href="#">aviso de privacidad.</p>
+        </div>
+    </div>
+</div>
+<!-- PopUp-End -->
 <body <?php $style = get_theme_mod( 'trizzy_layout_style', 'boxed' ); body_class($style); ?>>
 	<div id="wrapper">
 		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'trizzy' ); ?></a>
@@ -82,7 +99,7 @@
 					$current_user = wp_get_current_user(); 
 					echo ' ' . $current_user->user_login.'</p>';
 					echo get_avatar( $id_or_email, $size, $default, $alt ).'</a>';
-					echo '<div class="CP-perfilOptions">
+					echo '<div class="CP-perfilOptionsWrapper"><div class="CP-perfilOptions">
 							<div class="arrow"></div>
 							<p class="name">Configuración de tu Cuenta</p>
 							<ul>
@@ -94,7 +111,7 @@
 								<li><a class="order" href="#"><i class="fa fa-shopping-cart"></i> Estado del Pedido</a></li>
 								<li><a class="sign-out" href="#"><i class="fa fa-sign-out"></i> Cerrar Sesión</a></li>
 							</ul>
-						</div></div>';
+						</div></div></div>';
 
 				} else {
 					echo '<a href="'.home_url().'/wp-login.php" class="CP-login"><i class="fa fa-sign-in"></i> Iniciar Sesion</a>';
