@@ -140,10 +140,13 @@ h6 {
 #cart .cart-list ul li.empty {
   color: #fff;
 }
+#cart .cart-list .cart_list_product {
+  float: none;
+}
 #cart .cart-list .cart_list_product a {
   width: initial;
   color: #c0dfe0;
-  height: 23px;
+  height: 18px;
 }
 #cart .cart-list .cart-buttons {
   border-top: 1px solid rgba(255,255,255,0.3);
