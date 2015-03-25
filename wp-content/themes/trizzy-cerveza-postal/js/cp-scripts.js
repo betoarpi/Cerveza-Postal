@@ -13,9 +13,13 @@
 
     // CP-PopUp
     //----------------------------------------//
+    if ($.cookie('PopUp-status')=='clicked'){
+        $('.PopUp').css('display','none');
+    }
     setTimeout(function(){$('.PopUp-container').addClass('PopUp-active')},500);
     $('.PopUp-yes').click(function(event){
         event.preventDefault();
+        $.cookie('PopUp-status','clicked');
         $('.PopUp-container').removeClass('PopUp-active');
         setTimeout(function(){$('.PopUp').fadeOut()},400);
     });
@@ -50,4 +54,5 @@
         };
     }
     ParallaxImg();
+    $(window).resize(function(){ParallaxImg();});
 })(this.jQuery);
