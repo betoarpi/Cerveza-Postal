@@ -21,24 +21,6 @@
 
 	<?php wp_head(); ?>
 </head>
-<!-- Pop Up -->
-<div class="PopUp">
-    <div class="PopUp-container">
-        <figure class="PopUp-logoContainer">
-            <img src="<?php echo get_stylesheet_directory_uri();?>/img/logoB.png" alt="Cerveza Postal">
-        </figure>
-        <div class="PopUp-infoContainer">
-            <p class="PopUp-question"><strong class="simbol">?</strong>Eres mayor de edad?</p>
-            <div class="PopUp-awnser">
-                <a href="#" class="PopUp-yes">Si</a>
-                <a href="http://www.alcoholinformate.org.mx/" class="PopUp-no">No</a>
-            </div>
-            <p class="PopUp-info">Al acceder a este sitio, manifiesta su conformidad con el <a href="#">aviso de privacidad</a> y el <a href="#">uso de cookies</a> de este sitio web.
-            </br></br>para mas información, lea nuestro <a href="#">aviso de privacidad.</p>
-        </div>
-    </div>
-</div>
-<!-- PopUp-End -->
 <body <?php $style = get_theme_mod( 'trizzy_layout_style', 'boxed' ); body_class($style); ?>>
 	<div id="wrapper">
 		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'trizzy' ); ?></a>
