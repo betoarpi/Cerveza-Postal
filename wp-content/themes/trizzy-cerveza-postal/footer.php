@@ -10,7 +10,6 @@
 
 </div><!-- #content -->
 <?php if ( is_user_logged_in() ){}else{ ?>
-
 <!-- Pop Up -->
 <div class="PopUp">
     <div class="PopUp-container">
