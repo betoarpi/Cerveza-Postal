@@ -116,7 +116,7 @@ input[type="text"]:focus,input[type="number"]:focus,input[type="password"]:focus
 .rev_slider{touch-action:initial !important}
 .ParallaxImg{top:20px !important}
 .ParallaxImg-banner{top:35px !important}
-.PopUp{position:absolute;top:0;lef:0;width:100%;background:rgba(0,0,0,0.6);height:100%;overflow:hidden;z-index:202;}
+.PopUp{position:absolute;top:0;lef:0;width:100%;background:rgba(0,0,0,0.6);height:100%;overflow:hidden;z-index:400;}
 .PopUp .PopUp-active{top:120px !important}
 .PopUp .PopUp-container{background:url("img/fondoPopUp.png");-webkit-background-size:100% auto;-moz-background-size:100% auto;background-size:100% auto;background-repeat:no-repeat;background-color:#e9e3d5;width:600px;height:600px;top:110%;position:fixed;right:50%;-webkit-transform:translateX(50%);-moz-transform:translateX(50%);-o-transform:translateX(50%);-ms-transform:translateX(50%);transform:translateX(50%);text-align:right;-webkit-transition:all 0.5s;-moz-transition:all 0.5s;-o-transition:all 0.5s;-ms-transition:all 0.5s;transition:all 0.5s;}
 .PopUp .PopUp-container .PopUp-logoContainer{max-width:150px;display:inline-block;margin:7%;}
@@ -129,6 +129,13 @@ input[type="text"]:focus,input[type="number"]:focus,input[type="password"]:focus
 .PopUp .PopUp-container .PopUp-infoContainer .PopUp-awnser a:first-child{margin-right:60px}
 .PopUp .PopUp-container .PopUp-infoContainer .PopUp-info{margin:40px 0;text-transform:uppercase;font-size:16px;padding:0 20px;}
 .PopUp .PopUp-container .PopUp-infoContainer .PopUp-info a{color:#d3472a}
+input[type="number"].qty{padding:7px 12px}
+body .wishlist_table .add_to_cart,body .yith-wcwl-add-button > a.button.alt{background-color:#fff;color:#d14728;}
+body .wishlist_table .add_to_cart:hover:before,body .yith-wcwl-add-button > a.button.alt:hover:before{-webkit-animation:pound .6s infinite;-moz-animation:pound .6s infinite;-o-animation:pound .6s infinite;-ms-animation:pound .6s infinite;animation:pound .6s infinite;color:#183e58}
+.add_to_wishlist:before{overflow:visible}
+.single-product .titlebar .sixteen h2,.single-product .titlebar .sixteen #breadcrumbs{padding-left:150px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+.single_add_to_cart_button{background:#183e58;}
+.single_add_to_cart_button:hover{background-color:#d14728 !important}
 @media only screen and (max-width: 1389px) and (min-width: 960px){.fullwidth .fullwidth-element.home-slider{width:100%}
 }@media only screen and (max-width: 991px){.post-type-archive .parallax-titlebar .parallax-content h2{padding-left:0 !important}
 .page .parallax-titlebar .parallax-content h2{padding-left:0 !important}
@@ -146,4 +153,14 @@ a.menu-trigger{background:#183e58 !important}
 #logo{float:none;margin:0 auto;position:static;}
 #logo a img{margin:0 auto;width:100px}
 #top-bar .eight.columns{width:50%}
+}@-moz-keyframes pound{0%{-webkit-transform:none;-moz-transform:none;-o-transform:none;-ms-transform:none;transform:none}
+100%{-webkit-transform:scale(1.3);-moz-transform:scale(1.3);-o-transform:scale(1.3);-ms-transform:scale(1.3);transform:scale(1.3)}
+}@-webkit-keyframes pound{0%{-webkit-transform:none;-moz-transform:none;-o-transform:none;-ms-transform:none;transform:none}
+100%{-webkit-transform:scale(1.3);-moz-transform:scale(1.3);-o-transform:scale(1.3);-ms-transform:scale(1.3);transform:scale(1.3)}
+}@-o-keyframes pound{0%{-webkit-transform:none;-moz-transform:none;-o-transform:none;-ms-transform:none;transform:none}
+100%{-webkit-transform:scale(1.3);-moz-transform:scale(1.3);-o-transform:scale(1.3);-ms-transform:scale(1.3);transform:scale(1.3)}
+}@-ms-keyframes pound{0%{-webkit-transform:none;-moz-transform:none;-o-transform:none;-ms-transform:none;transform:none}
+100%{-webkit-transform:scale(1.3);-moz-transform:scale(1.3);-o-transform:scale(1.3);-ms-transform:scale(1.3);transform:scale(1.3)}
+}@keyframes pound{0%{-webkit-transform:none;-moz-transform:none;-o-transform:none;-ms-transform:none;transform:none}
+100%{-webkit-transform:scale(1.3);-moz-transform:scale(1.3);-o-transform:scale(1.3);-ms-transform:scale(1.3);transform:scale(1.3)}
 }

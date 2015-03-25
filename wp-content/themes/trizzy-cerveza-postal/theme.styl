@@ -640,7 +640,7 @@ textarea:focus
 	background rgba(black, 0.6);
 	height 100%
 	overflow hidden
-	z-index 202
+	z-index 400
 	.PopUp-active
 		top 120px !important
 	.PopUp-container
@@ -698,6 +698,44 @@ textarea:focus
 				padding 0 20px
 				a
 					color #d3472a
+
+// Product Page
+input[type="number"].qty
+	padding 7px 12px
+
+body .wishlist_table .add_to_cart, 
+body .yith-wcwl-add-button > a.button.alt
+	background-color white
+	color orange
+	
+	&:hover 
+		&:before
+			animation pound .6s infinite
+			color blue
+			
+.add_to_wishlist:before
+	overflow visible
+
+.single-product
+	.titlebar
+		.sixteen
+			h2,
+			#breadcrumbs
+				padding-left 150px
+				box-sizing border-box
+				
+.single_add_to_cart_button
+	background blue
+	
+	&:hover 
+		background-color orange !important
+
+@keyframes pound
+	from
+		transform none
+	to
+		transform scale(1.3)
+	
 // Media queries fixes
 @media only screen and (max-width: 1389px) and (min-width: 960px)
 	.fullwidth .fullwidth-element.home-slider
