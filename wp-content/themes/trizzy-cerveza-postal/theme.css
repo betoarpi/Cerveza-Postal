@@ -131,8 +131,9 @@ input[type="text"]:focus,input[type="number"]:focus,input[type="password"]:focus
 .PopUp .PopUp-container .PopUp-infoContainer .PopUp-info a{color:#d3472a}
 input[type="number"].qty{padding:7px 12px}
 body .wishlist_table .add_to_cart,body .yith-wcwl-add-button > a.button.alt{background-color:#fff;color:#d14728;}
-body .wishlist_table .add_to_cart:hover:before,body .yith-wcwl-add-button > a.button.alt:hover:before{-webkit-animation:pound .6s infinite;-moz-animation:pound .6s infinite;-o-animation:pound .6s infinite;-ms-animation:pound .6s infinite;animation:pound .6s infinite;color:#183e58}
-.add_to_wishlist:before{overflow:visible}
+body .wishlist_table .add_to_cart:hover,body .yith-wcwl-add-button > a.button.alt:hover{color:#183e58;}
+body .wishlist_table .add_to_cart:hover:before,body .yith-wcwl-add-button > a.button.alt:hover:before{-webkit-animation:pound .6s infinite;-moz-animation:pound .6s infinite;-o-animation:pound .6s infinite;-ms-animation:pound .6s infinite;animation:pound .6s infinite}
+.add_to_wishlist:before{overflow:visible;padding:1px}
 .single-product .titlebar .sixteen h2,.single-product .titlebar .sixteen #breadcrumbs{padding-left:150px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 .single_add_to_cart_button{background:#183e58;}
 .single_add_to_cart_button:hover{background-color:#d14728 !important}

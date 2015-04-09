@@ -81,19 +81,8 @@
 					$current_user = wp_get_current_user(); 
 					echo ' ' . $current_user->user_login.'</p>';
 					echo get_avatar( $id_or_email, $size, $default, $alt ).'</a>';
-					echo '<div class="CP-perfilOptionsWrapper"><div class="CP-perfilOptions">
-							<div class="arrow"></div>
-							<p class="name">Configuración de tu Cuenta</p>
-							<ul>
-								<li><a class="perfil" href="#"><i class="fa fa-user"></i> Perfil</a></li>
-								<li><a class="edit" href="#"><i class="fa fa-pencil"></i> Editar Perfil</a></li>
-								<li><a class="account" href="#"><i class="fa fa-credit-card"></i> Mi Cuenta</a></li>
-								<li><a clas="record" href="#"><i class="fa fa-history"></i> Mi Historial de Pedidos</a></li>
-								<li><a class="favorites" href="#"><i class="fa fa-beer"></i> Mis Favoritas</a></li>
-								<li><a class="order" href="#"><i class="fa fa-shopping-cart"></i> Estado del Pedido</a></li>
-								<li><a class="sign-out" href="#"><i class="fa fa-sign-out"></i> Cerrar Sesión</a></li>
-							</ul>
-						</div></div></div>';
+					//Cargar Navegación del Usuario
+        			get_template_part( 'modulos/nav', 'usuario' );
 
 				} else {
 					echo '<a href="'.home_url().'/wp-login.php" class="CP-login"><i class="fa fa-sign-in"></i> Iniciar Sesion</a>';
